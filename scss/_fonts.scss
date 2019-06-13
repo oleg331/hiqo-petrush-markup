@@ -1,10 +1,30 @@
 
 @font-face {
-    font-family: 'Raleway Semibold';
+    font-family: 'primary-semibold';
     src: url('../assets/fonts/raleway/Raleway-SemiBold.eot');
     src: url('../assets/fonts/raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
     url('../assets/fonts/raleway/Raleway-SemiBold.woff') format('woff'),
     url('../assets/fonts/raleway/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'primary-light';
+    src: url('../assets/fonts/raleway/Raleway-Light.eot');
+    src: url('../assets/fonts/raleway/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/raleway/Raleway-Light.woff') format('woff'),
+    url('../assets/fonts/raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'primary-regular';
+    src: url('../assets/fonts/raleway/Raleway-Regular.eot');
+    src: url('../assets/fonts/raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/raleway/Raleway-Regular.woff') format('woff'),
+    url('../assets/fonts/raleway/Raleway-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
