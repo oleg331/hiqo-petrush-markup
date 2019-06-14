@@ -1,0 +1,28 @@
+
+.slider-arrows{
+
+    .slider-arrow{
+        display: inline-block;
+        position: absolute;
+        background: url(../assets/img/arrow-slider.png) 0 0 no-repeat;
+        width: 19px;
+        height: 31px;
+        top: 24%;
+        cursor: pointer;
+        transition: 0.2s opacity;
+
+        &:hover{
+            opacity: 0.6;
+        }
+
+        &.slider-arrow-left{
+            transform: rotate(0deg);
+            left: -97px;
+        }
+
+        &.slider-arrow-right{
+            transform: rotate(180deg);
+            right: -97px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+.slider-header{
+    
+    .slider-dots{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 34px;
+
+        .slider-dot{
+            display: inline-block;;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #fff;
+            margin: 0 9px;
+            transition: 0.2s;
+
+            &-active, &:hover{
+                border: 1px solid #abb3c0;
+                background: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
