@@ -5,7 +5,7 @@ var change = require('gulp-change');
 var browserSync = require('browser-sync').create();
 
 var allStyles = './scss/**/*.scss';
-var input = './scss/styles.scss';
+var input = './scss/style.scss';
 var output = './assets';
 
 var sassOptions = {
