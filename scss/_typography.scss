@@ -1,3 +1,16 @@
-// h1 {
-// 	color: $color-primary;
-// }
+
+h1{
+    position: relative;
+    font: 70px 'primary-semibold', Arial, sans-serif;
+    color: $color-header-base;
+    padding-bottom: 31px;
+    margin-bottom: 26px;
+}
+
+h3{
+    font: 45px 'primary-semibold', Arial, sans-serif;
+}
+
+h4{
+    font: 18px 'secondary-regular', Arial, sans-serif;
+}

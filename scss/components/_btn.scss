@@ -1,0 +1,26 @@
+.btn{
+    min-width: 148px;
+    height: 48px;
+    display: inline-block;
+    font: 16px 'primary-semibold', Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+    line-height: 50px;
+
+    &.btn-dark{
+        border: 1px solid #fff;
+
+        &:hover{
+            background: #ff3c1f;
+            border: 1px solid #ff3c1f;
+            // TODO
+            // border-width: 1px;
+            // border-style: solid;
+            // border-image: linear-gradient(to top, #902616, rgba(0, 0, 0, 0)) 1 100%;
+            // border-bottom: 1px solid #912616;
+        }
+    }
+}
