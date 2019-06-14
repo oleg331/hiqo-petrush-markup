@@ -5,13 +5,13 @@
 
     .navigation-item{
         text-transform: uppercase;
-        color: #fafafa;
+        color: $color-header-base;
         margin: 0 28px;
 
         a{
             position: relative;
             text-decoration: none;
-            color: #fafafa;
+            color: $color-header-base;
             padding: 8px;
 
             &:after{

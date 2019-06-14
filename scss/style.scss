@@ -8,10 +8,15 @@
 @import "components/layout";
 @import "components/btn";
 
+@import "components/header/header"; 
 @import "components/header/navigation"; 
 
 @import "components/slider/slider"; 
 @import "components/slider/slider-arrows"; 
-@import "components/slider-buttons"; 
-@import "components/slider-dots"; 
-@import "components/slider-slide"; 
+@import "components/slider/slider-buttons"; 
+@import "components/slider/slider-dots"; 
+@import "components/slider/slider-slide"; 
+
+@import "components/parallax";
+@import "components/statistics";
+@import "components/blog";
