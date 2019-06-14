@@ -1,0 +1,72 @@
+.parallax{
+    position: relative;
+    background: $color-parallax-bg;
+    color: #fff;
+    padding: 30px 0 150px;
+  
+    &:before {
+      content: "";
+      border-top: 30px solid $color-header-bg;
+      border-left: 30px solid transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(50% - 17px);
+      height: 0;
+    }
+
+    & .container{
+        padding-top: 139px;
+    }
+
+    .header-parallax{
+        position: relative;
+        text-align: center;
+        margin-bottom: 77px;
+
+        h3{
+            position: relative;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+    
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100px;
+                height: 1px;
+                background: #fff;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .quote-parallax{
+        max-width: 893px;
+        margin: 0 auto;
+
+        blockquote{
+            position: relative;
+            letter-spacing: 0.35px;
+            font: 30px 'secondary-light-italic', Arial, sans-serif;
+            margin-bottom: 40px;
+    
+            &:before{
+                content: '';
+                position: absolute;
+                left: -30px;
+                top: -15px;
+                width: 51px;
+                height: 40px;
+                background: url(../../assets/img/icon-quote.png) 0 0 no-repeat;
+            }
+        }
+
+        .author-quote-parallax{
+            font: 30px 'secondary-light', Arial, sans-serif;
+
+        }
+    }
+}

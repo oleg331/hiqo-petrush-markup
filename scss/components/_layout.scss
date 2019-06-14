@@ -1,7 +1,7 @@
 
 
 body{
-    color: #fafafa;
+    color: $color-primary-dark;
     font: 18px 'primary-regular', Arial, sans-serif;
 }
 
@@ -9,17 +9,3 @@ body{
     max-width: 1170px;
     margin: 0 auto;
 }
-
-// header
-
-.header-top{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 168px;
-}
-
-.header{
-    background: #3d4148;
-}
-
-// header end
