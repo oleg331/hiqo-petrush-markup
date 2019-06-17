@@ -1,0 +1,48 @@
+
+
+
+.statistics-item{
+    float: left;
+    width: 25%;
+
+    @include clearfix;
+    
+    .icons-statistic{
+        width: 45px;
+        height: 45px;
+        background: url(../../assets/img/icons-statistics.png) 0 0 no-repeat;
+        position: relative;
+        float: left;
+        margin: 0 30px 0 20px;
+
+        &.icon-user{
+            background-position: 0 0;
+        }
+        &.icon-product{
+            background-position: 0 -45px;
+        }
+        &.icon-comment{
+            background-position: 0 -90px;
+        }
+        &.icon-code{
+            background-position: 0 -135px;
+        }
+    }
+
+    .inner-statistics-item{
+        display: flex;
+        flex-flow: column wrap;
+
+        strong{
+            font-size: 40px;
+            line-height: 39px;
+            margin-bottom: 31px;
+        }
+
+        span{
+            font: 25px 'primary-light', Arial, sans-serif;
+            letter-spacing: -0.1px;
+            
+        }
+    }
+}
