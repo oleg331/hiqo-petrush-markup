@@ -1,0 +1,35 @@
+
+.blog{
+    background: $color-posts-bg;
+    padding-bottom: 128px;
+    position: relative;
+
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 29px;
+        width: calc(50% - 15px);
+        height: 1px;
+        background: #b1b8c4;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: calc(50% - 22px);
+        bottom: 14px;
+        width: 43px;
+        height: 1px;
+        background: #b1b8c4;
+        transform: rotate(45deg);
+    }
+
+    .container{
+        padding-top: 91px;
+    }
+
+    .head-section{
+        margin-bottom: 94px;    
+    }
+}

@@ -1,0 +1,98 @@
+.slider-post{
+
+    .slider-slide{
+        display: flex;
+
+        .block-post{
+            display: block;
+            flex: 0 0 370px;
+            border: 1px solid #e6e9ed;
+            box-sizing: border-box;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            .img-block-post{
+                height: 245px;
+                background: #656d78;
+                position: relative;
+  
+                &:before {
+                  content: "";
+                  border-top: 37px solid $color-posts-bg;
+                  border-left: 33px solid transparent;
+                  position: absolute;
+                  top: -1px;
+                  right: -1px;
+                  width: calc(50% - 17px);
+                  height: 0;
+                }
+            }
+
+            .content-block-post{
+                padding: 18px 28px 30px 25px;
+                letter-spacing: 0.5px;
+                font: 14px 'secondary-regular', Arial, sans-serif;
+
+                .title-post{
+                    font: 25px 'primary-regular', Arial, sans-serif;
+                    letter-spacing: 0.5px;
+                    border-bottom: 1px solid #eaeaea;
+                    display: block;
+                    padding-bottom: 12px;
+                    margin-bottom: 14px;
+                }
+
+                .short-info-post{
+                    color: #303030;
+                    line-height: 14px;
+                    margin-bottom: 18px;
+
+                    &:after{
+                        content: '';
+                        display: block;
+                        height: 0;
+                        overflow: hidden;
+                        clear: both;
+                    }
+
+                    .info-post-item{
+                        float: left;
+                        
+                        &:not(:last-child) {
+                            margin-right: 7px;
+                        }
+
+                        .icons-blog{
+                            display: inline-block;
+                            float: left;
+                            background: url(../../assets/img/icons-blog.png) 0 0 no-repeat;
+                            width: 15px;
+                            height: 15px;
+                            margin: 0 15px 0 0;
+
+                            &.icon-author{
+                                background-position: 0 0;
+                            }
+                            &.icon-calendar{
+                                background-position: 0 -15px;
+                            }
+                            &.icon-comment{
+                                background-position: 0 -30px;
+                            }
+                        }
+                    }
+
+                }
+
+                p{
+                    color: #4e5860;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+    }
+}
