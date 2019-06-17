@@ -1,0 +1,44 @@
+
+.contact-list{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 $width-contact-list;
+    padding: 0 29px;
+    box-sizing: border-box;
+    
+    .contact-list-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 66px;
+
+        .icons-contact{
+            display: inline-block;
+            background: url(../../assets/img/icons-contact.png) 0 0 no-repeat;
+            width: 29px;
+            margin-right: 60px;
+
+            &.icon-location{
+                height: 35px;
+                background-position: 0 0;
+            }
+            
+            &.icon-mail{
+                height: 19px;
+                background-position: 0 -35px;
+            }
+
+            &.icon-phone{
+                height: 36px;
+                background-position: 0 -54px;
+            }
+        }
+
+        .icon-location + .content-list-item{
+            flex: 0 0 140px;
+        }
+
+        .icon-phone + .content-list-item{
+            flex: 0 0 170px;
+        }
+    }
+}
