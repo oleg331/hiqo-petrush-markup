@@ -1,0 +1,66 @@
+
+.head-section{
+    position: relative;
+    text-align: center;
+    margin-bottom: 77px;
+
+    h3{
+        position: relative;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+
+        &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 1px;
+            margin: 0 auto;
+        }
+    }
+    
+    &.head-light{
+        h3{
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+
+            &:after{
+                background: #fff;
+            }
+        }
+    }
+
+    &.head-dark{
+        h3{
+            padding-bottom: 24px;
+            margin-bottom: 18px;
+
+            &:after{
+                background: linear-gradient(to right, #4e5860, #ff3c1f);
+            }
+        }
+
+        p{
+            max-width: 775px;
+            margin: 0 auto;
+            color: #4e5860;
+        }
+    }
+
+    &.head-left{
+        text-align: left;
+
+        h3, p{
+
+            &:after{
+                margin: 0;
+            }
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+}
