@@ -1,35 +1,101 @@
 a{
-    color: #4e5860;
+    color: $color-link-base;
     text-decoration: none;
     transition: 0.2s color;
 
     &:hover{
-        color: #ff3c1f;
+        color: $color-link-base-active;
     }
 }
 
 h1{
     position: relative;
-    font: 70px 'primary-semibold', Arial, sans-serif;
     color: $color-header-base;
     padding-bottom: 31px;
     margin-bottom: 26px;
+    @include font(70px, 'primary-semibold');
 }
 
 h3{
-    font: 45px 'primary-semibold', Arial, sans-serif;
+    @include font(45px, 'primary-semibold');
 }
 
 h4{
-    font: 18px 'secondary-regular', Arial, sans-serif;
-}
-
-.portfolio-block-inner{
-    font-family: 'primary-semibold', Arial, sans-serif;
+    @include font(18px, 'secondary-regular');
 }
 
 h5{
     font-size: 20px;
 }
+
+// slider
+
+.description-slider-slide{
+    line-height: 64px;
+    letter-spacing: 0.35px;
+    @include font(50px, 'primary-light');
+}
+
+// paralax
+
+blockquote{
+    letter-spacing: 0.35px;
+    @include font(30px, 'secondary-light-italic');
+}
+
+// statistics
+
+.statistics{ 
+    @include font-family('primary-regular');
+
+    .count-statistics-item{ 
+        font-size: 40px; 
+        line-height: 39px;
+    }
+    
+    .text-statistics-item{
+        letter-spacing: -0.1px;
+        @include font(25px, 'primary-light');
+    }
+}
+
+// blog
+
+.content-block-post{
+    letter-spacing: 0.5px;
+    @include font(14px, 'secondary-regular');
+}
+
+.title-post{
+    letter-spacing: 0.5px;
+    @include font(25px, 'primary-regular');
+}
+
+.short-info-post{
+    line-height: 14px;
+}
+
+.description-post{
+    line-height: 24px;
+}
+
+// portfolio
+
+.portfolio-block-inner{ 
+    @include font-family('primary-semibold');
+}
+
+// contacts
+
+.contact-list-item{
+    @include font(14px, 'secondary-regular');
+}
+
+// footer
+
+.copyrights{ 
+    @include font(14px, 'secondary-light');
+}
+
 
 

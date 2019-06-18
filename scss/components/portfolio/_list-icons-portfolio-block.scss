@@ -2,13 +2,13 @@
 .list-icons-portfolio-block{
     display: flex;
     align-items: center;
-    width: 160px;
+    width: $width-list-icons-portfolio-block;
     justify-content: space-evenly;
 
     .list-portfolio-block-item{
 
         .icons-portfolio{
-            height: 22px;
+            height: $height-icons-portfolio;
             position: relative;
             display: inline-block;
 

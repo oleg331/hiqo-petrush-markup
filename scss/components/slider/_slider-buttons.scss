@@ -1,13 +1,6 @@
 
 .slider-buttons{
-
-    &:after{
-        content: '';
-        display: block;
-        height: 0;
-        overflow: hidden;
-        clear: both;
-    }
+    @include clearfix;
 
     .btn{
         float: left;

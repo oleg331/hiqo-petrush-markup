@@ -1,5 +1,8 @@
 
 @import "mixins/clearfix";
+@import "mixins/shape";
+@import "mixins/font";
+
 @import "vendor/reset";
 
 @import "variables";
@@ -7,6 +10,9 @@
 @import "typography";
 
 @import "components/layout";
+
+@import "components/logo";
+@import "components/polyline";
 
 @import "components/form/btn";
 @import "components/form/input";

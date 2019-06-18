@@ -1,7 +1,7 @@
 .navigation{
     display: flex;
     align-items: center;
-    height: 132px;
+    height: $height-navigation;
 
     .navigation-item{
         text-transform: uppercase;
@@ -22,23 +22,13 @@
                 right: 0;
                 width: 0;
                 height: 1px;
-                background: linear-gradient(to right, #ff3c1f, #902616);
+                background: $bg-line-navigation-item;
                 transition: 0.2s width;
 
             }
 
             &.logo{
-                display: flex;
-                flex-flow: column wrap;
-                align-items: center;
-                font-size: 32px;
-                text-transform: capitalize;
                 margin-top: 19px;
-                transition: 0.2s opacity;
-
-                img{
-                    margin-bottom: 16px;
-                }
             }
 
 
@@ -49,7 +39,7 @@
             a{
                 &:not(.logo){
                     &:after{
-                        width: 100%;
+                        width: $width-line-navigation-item-active;
                     }
                 }
 

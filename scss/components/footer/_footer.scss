@@ -6,12 +6,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-height: 128px;
+        min-height: $height-container-footer;
         padding: 10px 40px;
         position: relative;
 
         .logo{
-            color: #fafafa;
+            color: $color-text-logo;
         }
 
         .copyrights{

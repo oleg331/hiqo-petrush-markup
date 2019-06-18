@@ -3,7 +3,7 @@
 
 .statistics-item{
     float: left;
-    width: 25%;
+    width: $width-statistics-item;
 
     @include clearfix;
     
@@ -33,16 +33,8 @@
         display: flex;
         flex-flow: column wrap;
 
-        strong{
-            font-size: 40px;
-            line-height: 39px;
+        .count-statistics-item{
             margin-bottom: 31px;
-        }
-
-        span{
-            font: 25px 'primary-light', Arial, sans-serif;
-            letter-spacing: -0.1px;
-            
         }
     }
 }

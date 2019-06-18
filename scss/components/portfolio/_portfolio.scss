@@ -3,19 +3,9 @@
     position: relative;
     padding-top: 50px;
     padding: 50px 0 0;
-    
-    &:before{
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: calc(50% - 15px);
-        height: 1px;
-        background: #b1b8c4;
-    }
 
     .head-section{
-        h3{
+        .head-title{
             padding-bottom: 15px;
             margin-bottom: 100px;
         }
@@ -25,8 +15,8 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(auto, auto));
         grid-template-rows: repeat(2, 240px);
-        width: 100%;
         grid-gap: 1px;
-        color: #fff;
+        width: $width-list-portfolio;
+        color: $color-list-portfolio;
     }
 }

@@ -6,6 +6,7 @@
     font-size: 32px;
     text-transform: capitalize;
     transition: 0.2s opacity;
+    color: $color-text-logo;
 
     &:hover{
         opacity: 0.8;

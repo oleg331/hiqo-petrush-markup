@@ -52,8 +52,8 @@
 		
 				<div class="slider slider-header">
 					<div class="slider-slide">
-						<h1>Expire</h1>
-						<p>Professionaly designed, carefully made for your enjoyement</p>
+						<h1 class="title-slider-slide">Expire</h1>
+						<p class="description-slider-slide">Professionaly designed, carefully made for your enjoyement</p>
 						<div class="slider-buttons">
 							<a class="btn btn-dark" href="#">Explore</a>
 							<a class="btn btn-dark" href="#">Learn more</a>
@@ -74,7 +74,7 @@
 		<section class="parallax">
 			<div class="container">
 				<header class="head-section head-light">
-					<h3>Paralax section</h3>
+					<h3 class="head-title">Paralax section</h3>
 					<p>Exploring the unexplored is a risky business, but a rewarding one.</p>
 				</header>
 				<div class="quote-parallax">
@@ -92,29 +92,29 @@
 					<li class="statistics-item">
 						<i class="icons-statistic icon-user"></i>
 						<div class="inner-statistics-item">
-							<strong>1000+</strong>
-							<span>Happy users</span>
+							<strong class="count-statistics-item">1000+</strong>
+							<span class="text-statistics-item">Happy users</span>
 						</div>
 					</li>
 					<li class="statistics-item">
 						<i class="icons-statistic icon-product"></i>
 						<div class="inner-statistics-item">
-							<strong>200</strong>
-							<span>Sold products</span>
+							<strong class="count-statistics-item">200</strong>
+							<span class="text-statistics-item">Sold products</span>
 						</div>
 					</li>
 					<li class="statistics-item">
 						<i class="icons-statistic icon-comment"></i>
 						<div class="inner-statistics-item">
-							<strong>5632</strong>
-							<span>Comments</span>
+							<strong class="count-statistics-item">5632</strong>
+							<span class="text-statistics-item">Comments</span>
 						</div>
 					</li>
 					<li class="statistics-item">
 						<i class="icons-statistic icon-code"></i>
 						<div class="inner-statistics-item">
-							<strong>25000+</strong>
-							<span>Lines of code</span>
+							<strong class="count-statistics-item">25000+</strong>
+							<span class="text-statistics-item">Lines of code</span>
 						</div>
 					</li>
 				</ul>
@@ -123,7 +123,7 @@
 		<section class="blog">
 			<div class="container">
 				<div class="head-section head-dark head-centered">
-					<h3>Latest Blog Posts</h3>
+					<h3 class="head-title">Latest Blog Posts</h3>
 					<p>
 						Information is a source of learning. But unless it is organized, processed,
 						and available to the right people in a format for decision making, it is a burden, not a benefit.
@@ -149,7 +149,7 @@
 										3
 									</li>
 								</ul>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
+								<p class="description-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
 								<a class="btn btn-light read-more" href="#">Read more</a>
 							</div>
 						</div>
@@ -171,7 +171,7 @@
 										3
 									</li>
 								</ul>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
+								<p class="description-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
 								<a class="btn btn-light read-more" href="#">Read more</a>
 							</div>
 						</div>
@@ -193,7 +193,7 @@
 										3
 									</li>
 								</ul>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
+								<p class="description-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
 								<a class="btn btn-light read-more" href="#">Read more</a>
 							</div>
 						</div>
@@ -203,7 +203,7 @@
 		</section>
 		<section class="portfolio">
 			<div class="head-section head-dark">
-				<h3>Latest portfolio</h3>
+				<h3 class="head-title">Latest portfolio</h3>
 			</div>
 			<div class="list-portfolio">
 				<div class="portfolio-block">
@@ -307,7 +307,7 @@
 		<section class="contact-us">
 			<div class="container">
 				<div class="head-section head-dark">
-					<h3>Get to know us better</h3>
+					<h3 class="head-title">Get to know us better</h3>
 					<p>Contact us, and we will contact you back. Want to chat? We can do that too.</p>
 				</div>
 				<div class="contact-content">
@@ -339,14 +339,14 @@
 					<div class="contact-form">
 						<form action="#">
 							<div class="form-group">
-								<input class="input-general" type="text" name="name" placeholder="Name">
-								<input class="input-general" type="email" name="email" placeholder="E-mail">
+								<input class="input-general" type="text" name="name" placeholder="Name" tabindex="1">
+								<input class="input-general" type="email" name="email" placeholder="E-mail" tabindex="2">
 							</div>
 							<div class="form-group">
-								<input class="input-general" type="text" name="subject" placeholder="Subject">
+								<input class="input-general" type="text" name="subject" placeholder="Subject" tabindex="3">
 							</div>
 							<div class="form-group">
-								<textarea class="textarea-general" name="message" placeholder="Message"></textarea>
+								<textarea class="textarea-general" name="message" placeholder="Message" tabindex="4"></textarea>
 							</div>
 						</form>
 					</div>
@@ -355,19 +355,41 @@
 		</section>
 	</div>
 	<footer class="footer">
-
-		<ul class="footer-socials">
-			<li><a class="icon-facebook" href="#" class="icon*" target="_blank"></a></li>
-			<li><a class="icon-twitter" href="#" class="icon*" target="_blank"></a></li>
-			<li><a class="icon-linkedin" href="#" class="icon*" target="_blank"></a></li>
-			<li><a class="icon-googleplus" href="#" class="icon*" target="_blank"></a></li>
-			<li><a class="icon-instagram" href="#" class="icon*" target="_blank"></a></li>
-		</ul>
-		<a href="index.html" class="logo">
-			<img src="./assets/logo.png" alt="logo" />
-			Expire
-		</a>
-		<p class="copyrights">© Copyright 2014, design by dingo_design</p>
+		<div class="container">
+			<ul class="footer-socials">
+				<li class="footer-socials-item">
+					<a href="#" target="_blank">
+						<i class="icons-social icon-facebook"></i>
+					</a>
+				</li>
+				<li class="footer-socials-item">
+					<a href="#" target="_blank">
+							<i class="icons-social icon-twitter"></i>
+						</a>
+				</li>
+				<li class="footer-socials-item">
+					<a href="#" target="_blank">
+							<i class="icons-social icon-linkedin"></i>
+						</a>
+				</li>
+				<li class="footer-socials-item">
+					<a href="#" target="_blank">
+						<i class="icons-social icon-googleplus"></i>
+					</a>
+				</li>
+				<li class="footer-socials-item">
+					<a href="#" target="_blank">
+						<i class="icons-social icon-instagram"></i>
+					</a>
+				</li>
+			</ul>
+			<a class="logo" href="index.html">
+				<img src="./assets/img/logo.png" alt="logo" />
+				Expire
+			</a>
+			<p class="copyrights">© Copyright 2014, design by dingo_design</p>
+			<a href="#" class="footer-anchor"></a>
+		</div>
 	</footer>
 </body>
 </html>

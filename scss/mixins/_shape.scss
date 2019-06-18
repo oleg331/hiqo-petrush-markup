@@ -1,0 +1,12 @@
+@mixin shape($color-shape) {
+    &:before {
+        content: "";
+        border-top: 30px solid $color-shape;
+        border-left: 30px solid transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(50% - 17px);
+        height: 0;
+    }
+}
