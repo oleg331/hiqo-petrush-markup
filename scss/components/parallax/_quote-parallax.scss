@@ -1,12 +1,12 @@
-.quote-parallax{
+.quote-parallax {
     max-width: 893px;
     margin: 0 auto;
 
-    blockquote{
+    blockquote {
         position: relative;
         margin-bottom: 40px;
 
-        &:before{
+        &:before {
             content: '';
             position: absolute;
             left: -30px;
@@ -15,10 +15,5 @@
             height: 40px;
             background: url(../../assets/img/icon-quote.png) 0 0 no-repeat;
         }
-    }
-
-    .author-quote-parallax{
-        font: 30px 'secondary-light', Arial, sans-serif;
-
     }
 }

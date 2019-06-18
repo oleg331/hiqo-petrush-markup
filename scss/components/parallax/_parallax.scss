@@ -1,4 +1,4 @@
-.parallax{
+.parallax {
     position: relative;
     background: $color-parallax-bg;
     color: #fff;
@@ -6,11 +6,11 @@
 
     @include shape($color-header-bg);
 
-    .container{
+    .container {
         padding-top: 139px;
 
-        .header-parallax{
-          text-align: center;
+        .header-parallax {
+            text-align: center;
         }
     }
 }

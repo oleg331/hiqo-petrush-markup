@@ -1,12 +1,11 @@
-
 .slider-header {
-    
-    .slider-slide{
+
+    .slider-slide {
         padding-bottom: 195px;
         position: relative;
 
-        .title-slider-slide{
-            &:after{
+        .title-slider-slide {
+            &:after {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -18,7 +17,7 @@
             }
         }
 
-        .description-slider-slide{
+        .description-slider-slide {
             max-width: $width-description-slide;
             margin-bottom: 60px;
         }

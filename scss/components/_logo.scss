@@ -1,5 +1,4 @@
-
-.logo{
+.logo {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -8,11 +7,11 @@
     transition: 0.2s opacity;
     color: $color-text-logo;
 
-    &:hover{
+    &:hover {
         opacity: 0.8;
     }
 
-    img{
+    img {
         margin-bottom: 16px;
     }
 }

@@ -1,43 +1,43 @@
-.footer-socials{
+.footer-socials {
     display: flex;
 
-    .footer-socials-item{
-        
+    .footer-socials-item {
+
         &:not(:last-of-type) {
             margin-right: 40px;
         }
 
-        .icons-social{
+        .icons-social {
             display: inline-block;
             background: url(../../assets/img/icons-social.png) 0 0 no-repeat;
             height: 21px;
             transition: 0.2s;
 
-            &:hover{
+            &:hover {
                 opacity: 0.6;
             }
 
-            &.icon-facebook{
+            &.icon-facebook {
                 width: 10px;
                 background-position: 0 0;
             }
 
-            &.icon-twitter{
+            &.icon-twitter {
                 width: 28px;
                 background-position: -10px 0;
             }
 
-            &.icon-linkedin{
+            &.icon-linkedin {
                 width: 22px;
                 background-position: -38px 0;
             }
 
-            &.icon-googleplus{
+            &.icon-googleplus {
                 width: 21px;
                 background-position: -60px 0;
             }
 
-            &.icon-instagram{
+            &.icon-instagram {
                 width: 21px;
                 background-position: -81px 0;
             }

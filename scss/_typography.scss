@@ -1,3 +1,7 @@
+body{
+    @include font(18px, 'primary-regular');
+}
+
 a{
     color: $color-link-base;
     text-decoration: none;
@@ -28,6 +32,13 @@ h5{
     font-size: 20px;
 }
 
+.btn{
+    @include font(16px, 'primary-semibold');
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+}
+
 // slider
 
 .description-slider-slide{
@@ -38,9 +49,15 @@ h5{
 
 // paralax
 
-blockquote{
-    letter-spacing: 0.35px;
-    @include font(30px, 'secondary-light-italic');
+.quote-parallax{
+    blockquote{
+        letter-spacing: 0.35px;
+        @include font(30px, 'secondary-light-italic');
+    }
+    
+    .author-quote-parallax {
+        @include font(30px, 'secondary-light');
+    }
 }
 
 // statistics
@@ -83,6 +100,10 @@ blockquote{
 
 .portfolio-block-inner{ 
     @include font-family('primary-semibold');
+}
+
+.portfolio-block{
+    @include font-family('secondary-semibold');
 }
 
 // contacts

@@ -1,10 +1,29 @@
 
+$color-body: #fafafa;
 $color-primary: #fff000;
 $color-primary-dark: #272d32;
 $color-primary-light: #272d32;
 $color-text-logo: #fafafa;
 $color-link-base: #4e5860;
 $color-link-base-active: #ff3c1f;
+$color-btn: #fff;
+$border-btn-dark: #fff;
+$bg-btn-dark-active: #ff3c1f;
+$border-btn-dark-active: #ff3c1f;
+
+$width-container: 1170px;
+
+// head-section
+$width-line-head-title: 100px;
+$height-line-head-title: 1px;
+$color-head-section-dark: #303030;
+$bg-line-head-title-light: #fff;
+$bg-line-head-title-dark: linear-gradient(to right, #4e5860, #ff3c1f);
+$color-paragraph-head-dark: #4e5860;
+$width-paragraph-head-title: 775px;
+
+// polyline
+$color-polyline: #b1b8c4;
 
 // header
 $color-header-bg: #3d4148;
@@ -46,6 +65,9 @@ $width-list-portfolio: 100%;
 $color-list-portfolio: #fff;
 $width-list-icons-portfolio-block: 160px;
 $height-icons-portfolio: 22px;
+$bg-portfolio-block: #656d78;
+$bg-portfolio-footer: #dddee0;
+$bg-border-footer-portfolio-block: #656d77;
 
 // contacts
 $color-contact-list-item: #4e5860;
