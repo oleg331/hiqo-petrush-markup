@@ -15,7 +15,11 @@
       height: 0;
     }
 
-    & .container{
+    .container{
         padding-top: 139px;
+
+        .header-parallax{
+          text-align: center;
+        }
     }
 }

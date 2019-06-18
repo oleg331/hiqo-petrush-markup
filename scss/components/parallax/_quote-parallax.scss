@@ -1,0 +1,26 @@
+.quote-parallax{
+    max-width: 893px;
+    margin: 0 auto;
+
+    blockquote{
+        position: relative;
+        letter-spacing: 0.35px;
+        font: 30px 'secondary-light-italic', Arial, sans-serif;
+        margin-bottom: 40px;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: -15px;
+            width: 51px;
+            height: 40px;
+            background: url(../../assets/img/icon-quote.png) 0 0 no-repeat;
+        }
+    }
+
+    .author-quote-parallax{
+        font: 30px 'secondary-light', Arial, sans-serif;
+
+    }
+}
