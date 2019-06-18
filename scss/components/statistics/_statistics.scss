@@ -1,26 +1,24 @@
-
-
-.statistics{
+.statistics {
     background: $color-statistics-bg;
     font-family: 'primary-regular', Arial, sans-serif;
     color: #fff;
     position: relative;
-  
+
     &:before {
-      content: '';
-      border-top: 30px solid $color-parallax-bg;
-      border-left: 30px solid transparent;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: calc(50% - 17px);
-      height: 0;
+        content: '';
+        border-top: 30px solid $color-parallax-bg;
+        border-left: 30px solid transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(50% - 17px);
+        height: 0;
     }
 
-    .list-statistics{
+    .list-statistics {
         padding: 91px 0 93px;
 
-        &:after{
+        &:after {
             content: '';
             display: block;
             height: 0;

@@ -1,0 +1,36 @@
+.footer{
+    background: $color-bg-footer;
+    border-top: 1px solid $color-border-footer;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 128px;
+        padding: 10px 40px;
+        position: relative;
+
+        .logo{
+            color: #fafafa;
+        }
+
+        .copyrights{
+            margin-right: 100px;
+        }
+
+        .footer-anchor{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background: #57595b url(../../assets/img/icon-arrow-anchor.png) center no-repeat;
+            position: absolute;
+            right: 0;
+            top: -20px;
+            transition: 0.2s;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}

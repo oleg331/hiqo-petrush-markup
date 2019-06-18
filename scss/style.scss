@@ -1,4 +1,5 @@
 
+@import "mixins/clearfix";
 @import "vendor/reset";
 
 @import "variables";
@@ -7,6 +8,8 @@
 
 @import "components/layout";
 @import "components/btn";
+
+@import "components/head-section";
 
 @import "components/header/header"; 
 @import "components/header/navigation"; 
@@ -17,6 +20,23 @@
 @import "components/slider/slider-dots"; 
 @import "components/slider/slider-slide"; 
 
-@import "components/parallax";
-@import "components/statistics";
-@import "components/blog";
+@import "components/parallax/parallax";
+@import "components/parallax/quote-parallax";
+
+@import "components/statistics/statistics";
+@import "components/statistics/statistics-item";
+
+@import "components/blog/blog";
+@import "components/blog/slider-post";
+
+@import "components/portfolio/portfolio";
+@import "components/portfolio/portfolio-block";
+@import "components/portfolio/list-icons-portfolio-block";
+
+@import "components/contact-us/contact-us";
+@import "components/contact-us/contact-list";
+@import "components/contact-us/contact-form";
+
+@import "components/footer/footer";
+@import "components/footer/footer-socials";
+
