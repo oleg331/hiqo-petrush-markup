@@ -1,0 +1,21 @@
+.portfolio {
+    position: relative;
+    padding-top: 50px;
+    padding: 50px 0 0;
+
+    .head-section {
+        .head-title {
+            padding-bottom: 15px;
+            margin-bottom: 100px;
+        }
+    }
+
+    .list-portfolio {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(auto, auto));
+        grid-template-rows: repeat(2, 240px);
+        grid-gap: 1px;
+        width: $width-list-portfolio;
+        color: $color-list-portfolio;
+    }
+}

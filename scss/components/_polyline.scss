@@ -1,0 +1,33 @@
+.blog {
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 29px;
+        width: calc(50% - 15px);
+        height: 1px;
+        background: $color-polyline;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: calc(50% - 22px);
+        bottom: 14px;
+        width: 43px;
+        height: 1px;
+        background: $color-polyline;
+        transform: rotate(45deg);
+    }
+}
+
+.portfolio:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(50% - 15px);
+    height: 1px;
+    background: $color-polyline;
+}

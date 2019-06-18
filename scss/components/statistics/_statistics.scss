@@ -1,0 +1,13 @@
+.statistics {
+    background: $color-statistics-bg;
+    color: $color-statistics;
+    position: relative;
+
+    @include shape($color-parallax-bg);
+
+    .list-statistics {
+        padding: 91px 0 93px;
+
+        @include clearfix;
+    }
+}

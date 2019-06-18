@@ -1,0 +1,20 @@
+.contact-us {
+
+    .container {
+        padding: 144px 0 65px;
+
+        .head-section {
+            margin-bottom: 56px;
+            text-align: left;
+
+            h3:after,
+            p {
+                margin: 0;
+            }
+        }
+
+        .contact-content {
+            display: flex;
+        }
+    }
+}

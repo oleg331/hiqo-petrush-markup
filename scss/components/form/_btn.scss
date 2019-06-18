@@ -1,0 +1,32 @@
+.btn {
+    min-width: 148px;
+    height: 48px;
+    display: inline-block;
+    font: 16px 'primary-semibold', Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+    line-height: 50px;
+
+    &.btn-dark {
+        border: 1px solid #fff;
+
+        &:hover {
+            background: #ff3c1f;
+            border: 1px solid #ff3c1f;
+            color: #fff;
+        }
+    }
+
+    &.btn-light {
+        color: #ff3c1f;
+        border: 1px solid #ff3c1f;
+
+        &:hover {
+            background: #ff3c1f;
+            color: #fff;
+        }
+    }
+}

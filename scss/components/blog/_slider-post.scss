@@ -1,0 +1,86 @@
+.slider-post {
+
+    .slider-slide {
+        display: flex;
+
+        .block-post {
+            display: block;
+            flex: 0 0 370px;
+            border: 1px solid $border-block-post;
+            box-sizing: border-box;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            .img-block-post {
+                height: $height-img-block-post;
+                background: $bg-img-block-post;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    border-top: 37px solid $color-posts-bg;
+                    border-left: 33px solid transparent;
+                    position: absolute;
+                    top: -1px;
+                    right: -1px;
+                    width: calc(50% - 17px);
+                    height: 0;
+                }
+            }
+
+            .content-block-post {
+                padding: 18px 28px 30px 25px;
+
+                .title-post {
+                    border-bottom: 1px solid $border-title-post;
+                    display: block;
+                    padding-bottom: 12px;
+                    margin-bottom: 14px;
+                }
+
+                .short-info-post {
+                    color: $color-short-info-post;
+                    margin-bottom: 18px;
+
+                    @include clearfix;
+
+                    .info-post-item {
+                        float: left;
+
+                        &:not(:last-child) {
+                            margin-right: 7px;
+                        }
+
+                        .icons-blog {
+                            display: inline-block;
+                            float: left;
+                            background: url(../../assets/img/icons-blog.png) 0 0 no-repeat;
+                            width: 15px;
+                            height: 15px;
+                            margin: 0 15px 0 0;
+
+                            &.icon-author {
+                                background-position: 0 0;
+                            }
+
+                            &.icon-calendar {
+                                background-position: 0 -15px;
+                            }
+
+                            &.icon-comment {
+                                background-position: 0 -30px;
+                            }
+                        }
+                    }
+                }
+
+                .description-post {
+                    color: $color-description-post;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

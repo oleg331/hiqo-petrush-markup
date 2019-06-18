@@ -1,25 +1,18 @@
-
-
-body{
-    color: #fafafa;
-    font: 18px 'primary-regular', Arial, sans-serif;
+body {
+    color: $color-body;
 }
 
-.container{
-    max-width: 1170px;
+.container {
+    max-width: $width-container;
     margin: 0 auto;
 }
 
-// header
-
-.header-top{
+.header-top {
     display: flex;
     justify-content: center;
     margin-bottom: 168px;
 }
 
-.header{
-    background: #3d4148;
+.header {
+    background: $color-header-bg;
 }
-
-// header end

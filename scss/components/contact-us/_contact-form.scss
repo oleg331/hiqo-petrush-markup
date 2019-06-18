@@ -1,0 +1,18 @@
+.contact-form {
+    flex: 0 0 calc(100% - #{$width-contact-list});
+    padding-top: 10px;
+
+    .form-group {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        input {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+}

@@ -1,7 +1,6 @@
+.slider-arrows {
 
-.slider-arrows{
-
-    .slider-arrow{
+    .slider-arrow {
         position: absolute;
         background: url(../assets/img/arrow-slider.png) 0 0 no-repeat;
         width: 19px;
@@ -10,16 +9,16 @@
         cursor: pointer;
         transition: 0.2s opacity;
 
-        &:hover{
+        &:hover {
             opacity: 0.6;
         }
 
-        &.slider-arrow-left{
+        &.slider-arrow-left {
             transform: rotate(0deg);
             left: -97px;
         }
 
-        &.slider-arrow-right{
+        &.slider-arrow-right {
             transform: rotate(180deg);
             right: -97px;
         }

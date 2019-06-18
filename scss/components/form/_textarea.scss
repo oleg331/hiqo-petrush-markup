@@ -1,0 +1,11 @@
+.textarea-general {
+    outline: none;
+    width: 100% !important;
+    font: 15px 'secondary-light-italic', Arial, sans-serif;
+    color: #4e5860;
+    padding: 16px 16px 16px;
+    min-height: 214px;
+    border: 1px solid;
+    border-image-source: linear-gradient(to bottom, transparent, #aab2bd);
+    border-image-slice: 1;
+}

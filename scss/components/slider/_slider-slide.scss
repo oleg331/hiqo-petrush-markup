@@ -1,12 +1,11 @@
-
 .slider-header {
-    
-    .slider-slide{
+
+    .slider-slide {
         padding-bottom: 195px;
         position: relative;
 
-        h1{
-            &:after{
+        .title-slider-slide {
+            &:after {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -18,11 +17,8 @@
             }
         }
 
-        p{
-            font: 50px 'primary-light', Arial, sans-serif;
-            line-height: 64px;
-            letter-spacing: 0.35px;
-            max-width: 950px;
+        .description-slider-slide {
+            max-width: $width-description-slide;
             margin-bottom: 60px;
         }
     }

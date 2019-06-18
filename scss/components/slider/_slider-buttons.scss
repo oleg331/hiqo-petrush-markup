@@ -1,15 +1,7 @@
+.slider-buttons {
+    @include clearfix;
 
-.slider-buttons{
-
-    &:after{
-        content: '';
-        display: block;
-        height: 0;
-        overflow: hidden;
-        clear: both;
-    }
-
-    .btn{
+    .btn {
         float: left;
         margin-right: 20px;
     }

@@ -1,7 +1,6 @@
+.slider-header {
 
-.slider-header{
-    
-    .slider-dots{
+    .slider-dots {
         display: flex;
         justify-content: center;
         position: absolute;
@@ -9,16 +8,17 @@
         right: 0;
         bottom: 34px;
 
-        .slider-dot{
+        .slider-dot {
             width: 20px;
             height: 20px;
-            border: 1px solid #fff;
+            border: 1px solid $color-border-slider-dot;
             margin: 0 9px;
             transition: 0.2s;
 
-            &-active, &:hover{
-                border: 1px solid #abb3c0;
-                background: #fff;
+            &-active,
+            &:hover {
+                border: 1px solid $color-border-slider-dot-active;
+                background: $bg-slider-dot-active;
                 cursor: pointer;
             }
         }
