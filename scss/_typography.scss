@@ -1,3 +1,12 @@
+a{
+    color: #4e5860;
+    text-decoration: none;
+    transition: 0.2s color;
+
+    &:hover{
+        color: #ff3c1f;
+    }
+}
 
 h1{
     position: relative;
@@ -14,3 +23,13 @@ h3{
 h4{
     font: 18px 'secondary-regular', Arial, sans-serif;
 }
+
+.portfolio-block-inner{
+    font-family: 'primary-semibold', Arial, sans-serif;
+}
+
+h5{
+    font-size: 20px;
+}
+
+
