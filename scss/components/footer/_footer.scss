@@ -12,6 +12,7 @@
 
         .logo {
             color: $color-text-logo;
+            padding-left: 92px;
         }
 
         .copyrights {
@@ -22,7 +23,7 @@
             width: 40px;
             height: 40px;
             display: inline-block;
-            background: $color-footer-anchor url(../../assets/img/icon-arrow-anchor.png) center no-repeat;
+            background: $color-anchor-footer url(../../assets/img/icon-arrow-anchor.png) center no-repeat;
             position: absolute;
             right: 0;
             top: -20px;
