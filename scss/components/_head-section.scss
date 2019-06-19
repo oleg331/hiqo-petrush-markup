@@ -6,7 +6,7 @@
     .head-title {
         position: relative;
         padding-bottom: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
 
         &:after {
             content: '';
@@ -22,8 +22,6 @@
 
     &.head-light {
         .head-title {
-            padding-bottom: 16px;
-            margin-bottom: 16px;
 
             &:after {
                 background: $bg-line-head-title-light;
@@ -43,7 +41,7 @@
             }
         }
 
-        p {
+        .head-description {
             margin: 0 auto;
             max-width: $width-paragraph-head-title;
             color: $color-paragraph-head-dark;
@@ -54,15 +52,35 @@
         text-align: left;
 
         .head-title,
-        p {
+        .head-description {
 
             &:after {
                 margin: 0;
             }
         }
 
-        p {
+        .head-description {
             margin: 0;
         }
+    }
+    
+    &.head-blog{
+        .head-title{
+            padding-bottom: 25px;
+        }
+
+        .head-description{
+            line-height: 25px;
+        }
+    }
+
+    &.head-contact-us{
+        .head-title{
+            padding-bottom: 14px;
+        }
+    }
+
+    .head-description{
+        letter-spacing: .05px;
     }
 }

@@ -1,4 +1,4 @@
-.blog {
+.bottom-border-polyline {
 
     &:before {
         content: '';
@@ -22,7 +22,7 @@
     }
 }
 
-.portfolio:before {
+.top-border-polyline:before {
     content: '';
     position: absolute;
     right: 0;

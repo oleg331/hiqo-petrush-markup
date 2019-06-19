@@ -1,60 +1,72 @@
-body{
+body {
     @include font(18px, 'primary-regular');
 }
 
-a{
+a {
     color: $color-link-base;
     text-decoration: none;
     transition: 0.2s color;
 
-    &:hover{
+    &:hover {
         color: $color-link-base-active;
     }
 }
 
-h1{
+.head-primary {
     position: relative;
     color: $color-header-base;
+    letter-spacing: 0.5px;
     padding-bottom: 31px;
     margin-bottom: 26px;
     @include font(70px, 'primary-semibold');
 }
 
-h3{
+.head-secondary {
     @include font(45px, 'primary-semibold');
 }
 
-h4{
-    @include font(18px, 'secondary-regular');
-}
-
-h5{
+.head-extra-secondary {
     font-size: 20px;
 }
 
-.btn{
+.logo{
+    font-size: 32px;
+}
+
+// form
+
+.btn {
     @include font(16px, 'primary-semibold');
     text-transform: uppercase;
     text-decoration: none;
     line-height: 50px;
 }
 
+.input-general {
+    @include font(15px, 'secondary-light-italic');
+    font-weight: bold;
+}
+
+.textarea-general {
+    @include font(15px, 'secondary-light-italic');
+}
+
 // slider
 
-.description-slider-slide{
+.description-slider-slide {
+    letter-spacing: 0.5px;
     line-height: 64px;
-    letter-spacing: 0.35px;
     @include font(50px, 'primary-light');
 }
 
 // paralax
 
-.quote-parallax{
-    blockquote{
+.quote-parallax {
+    blockquote {
         letter-spacing: 0.35px;
         @include font(30px, 'secondary-light-italic');
     }
-    
+
     .author-quote-parallax {
         @include font(30px, 'secondary-light');
     }
@@ -62,15 +74,15 @@ h5{
 
 // statistics
 
-.statistics{ 
+.statistics {
     @include font-family('primary-regular');
 
-    .count-statistics-item{ 
-        font-size: 40px; 
+    .count-statistics-item {
+        font-size: 40px;
         line-height: 39px;
     }
-    
-    .text-statistics-item{
+
+    .text-statistics-item {
         letter-spacing: -0.1px;
         @include font(25px, 'primary-light');
     }
@@ -78,45 +90,53 @@ h5{
 
 // blog
 
-.content-block-post{
-    letter-spacing: 0.5px;
-    @include font(14px, 'secondary-regular');
+.blog {
+    .content-block-post {
+        letter-spacing: -.1px;
+        @include font(14px, 'secondary-regular');
+    }
+
+    .title-post {
+        letter-spacing: 0.5px;
+        @include font(25px, 'primary-regular');
+    }
+
+    .short-info-post {
+        line-height: 14px;
+    }
+
+    .description-post {
+        line-height: 25px;
+        letter-spacing: .1px;
+    }
 }
 
-.title-post{
-    letter-spacing: 0.5px;
-    @include font(25px, 'primary-regular');
-}
-
-.short-info-post{
-    line-height: 14px;
-}
-
-.description-post{
-    line-height: 24px;
-}
 
 // portfolio
 
-.portfolio-block-inner{ 
-    @include font-family('primary-semibold');
+.portfolio-block-inner {
+    @include font-family('secondary-semibold');
+
+    .description-portfolio-block {
+        @include font-family('secondary-light');
+        font-size: 15px;
+        letter-spacing: .5px;
+    }
 }
 
-.portfolio-block{
+.portfolio-block {
     @include font-family('secondary-semibold');
 }
 
 // contacts
 
-.contact-list-item{
+.contact-list-item {
     @include font(14px, 'secondary-regular');
+    line-height: 24px;
 }
 
 // footer
 
-.copyrights{ 
+.copyrights {
     @include font(14px, 'secondary-light');
 }
-
-
-

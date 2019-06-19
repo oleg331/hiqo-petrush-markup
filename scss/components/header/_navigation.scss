@@ -23,7 +23,7 @@
                 width: 0;
                 height: 1px;
                 background: $bg-line-navigation-item;
-                transition: 0.2s width;
+                transition: .2s width;
 
             }
 
@@ -45,7 +45,7 @@
                 }
 
                 &.logo {
-                    opacity: 0.8;
+                    opacity: .8;
                 }
             }
         }

@@ -1,7 +1,8 @@
 .slider-buttons {
+    margin-left: 3px;
     @include clearfix;
 
-    .btn {
+    .btn-slider-buttons {
         float: left;
         margin-right: 20px;
     }

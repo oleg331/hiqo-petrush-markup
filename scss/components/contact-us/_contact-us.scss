@@ -1,14 +1,14 @@
 .contact-us {
 
     .container {
-        padding: 144px 0 65px;
+        padding: 141px 0 65px;
 
         .head-section {
             margin-bottom: 56px;
             text-align: left;
 
-            h3:after,
-            p {
+            .head-secondary:after,
+            .head-description {
                 margin: 0;
             }
         }

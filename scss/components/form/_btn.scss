@@ -2,31 +2,29 @@
     min-width: 148px;
     height: 48px;
     display: inline-block;
-    font: 16px 'primary-semibold', Arial, sans-serif;
-    color: #fff;
+    color: $color-btn;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    transition: 0.2s;
-    line-height: 50px;
+    transition: .2s;
 
     &.btn-dark {
-        border: 1px solid #fff;
+        border: 1px solid $border-btn-dark;
 
         &:hover {
-            background: #ff3c1f;
-            border: 1px solid #ff3c1f;
-            color: #fff;
+            background: $bg-btn-dark-active;
+            border: 1px solid $border-btn-dark-active;
+            color: $color-btn;
         }
     }
 
     &.btn-light {
-        color: #ff3c1f;
-        border: 1px solid #ff3c1f;
+        color: $border-btn-dark-active;
+        border: 1px solid $border-btn-dark-active;
 
         &:hover {
-            background: #ff3c1f;
-            color: #fff;
+            background: $border-btn-dark-active;
+            color: $color-btn;
         }
     }
 }

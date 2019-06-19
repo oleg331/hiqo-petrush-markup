@@ -7,78 +7,53 @@
   <link rel="stylesheet" href="/assets/style.css" /></head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <nav class="header-top">
+      <header class="header" id="header">
+        <nav class="header-top">
+          <div class="container">
             <ul class="navigation">
-              <li class="navigation-item active"><a href="#">Home</a></li>
-              <li class="navigation-item"><a href="#">Portfolio</a></li>
-              <li class="navigation-item"><a href="#">Blog</a></li>
+              <li class="navigation-item active"><a href="index.html">Home</a></li>
+              <li class="navigation-item"><a href="#portfolio">Portfolio</a></li>
+              <li class="navigation-item"><a href="#blog">Blog</a></li>
               <li class="navigation-item">
                 <a class="logo" href="index.html">
                   <img src="./assets/img/logo.png" alt="logo" />
                   Expire
                 </a>
               </li>
-              <li class="navigation-item">
-                <a href="#">Pages</a>
-                <!-- <ul class="popup-navigation popup-arrow-top">
-								<li><a href="#">Typography</a></li>
-								<li><a href="#">404 Page</a></li>
-								<li><a href="#">Coming Soon</a></li>
-								<li>
-									<a href="#">Page Layouts</a>
-									<ul class="popup-navigation popup-arrow-left">
-										<li><a href="#">Dummy Item</a></li>
-										<li><a href="#">Dummy Item</a></li>
-										<li><a href="#">Dummy Item</a></li>
-										<li><a href="#">Dummy Item</a></li>
-										<li>
-											<a href="#">Dummy Item</a>
-											<ul class="popup-navigation popup-arrow-right">
-												<li><a href="#">Dummy Item</a></li>
-												<li><a href="#">Dummy Item</a></li>
-												<li><a href="#">Dummy Item</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li><a href="#">Services</a></li>
-							</ul> -->
-              </li>
-              <li class="navigation-item"><a href="#">About us</a></li>
-              <li class="navigation-item"><a href="#">Contact</a></li>
+              <li class="navigation-item"><a href="#">Pages</a></li>
+              <li class="navigation-item"><a href="#contact-us">About us</a></li>
+              <li class="navigation-item"><a href="#contact-us">Contact</a></li>
             </ul>
-          </nav>
+          </div>
+        </nav>
 
-          <div class="slider slider-header">
-            <div class="slider-slide">
-              <h1 class="title-slider-slide">Expire</h1>
-              <p class="description-slider-slide">
-                Professionaly designed, carefully made for your enjoyement
-              </p>
-              <div class="slider-buttons">
-                <a class="btn btn-dark" href="#">Explore</a>
-                <a class="btn btn-dark" href="#">Learn more</a>
-              </div>
-              <div class="slider-arrows">
-                <div class="slider-arrow slider-arrow-left"></div>
-                <div class="slider-arrow slider-arrow-right"></div>
-              </div>
-              <div class="slider-dots">
-                <div class="slider-dot slider-dot-active"></div>
-                <div class="slider-dot"></div>
-                <div class="slider-dot"></div>
-              </div>
+        <div class="slider slider-header">
+          <div class="slider-slide">
+            <h1 class="head-primary title-slider-slide">Expire</h1>
+            <p class="description-slider-slide">
+              Professionaly designed, carefully made for your enjoyement
+            </p>
+            <div class="slider-buttons">
+              <a class="btn btn-slider-buttons btn-dark" href="#">Explore</a>
+              <a class="btn btn-slider-buttons btn-dark" href="#">Learn more</a>
+            </div>
+            <div class="slider-arrows">
+              <div class="slider-arrow slider-arrow-left"></div>
+              <div class="slider-arrow slider-arrow-right"></div>
+            </div>
+            <div class="slider-dots">
+              <div class="slider-dot slider-dot-active"></div>
+              <div class="slider-dot"></div>
+              <div class="slider-dot"></div>
             </div>
           </div>
         </div>
       </header>
-      <section class="parallax">
+      <section class="parallax" id="parallax">
         <div class="container">
           <header class="head-section head-light">
-            <h3 class="head-title">Paralax section</h3>
-            <p>
+            <h3 class="head-secondary head-title">Paralax section</h3>
+            <p class="head-description">
               Exploring the unexplored is a risky business, but a rewarding one.
             </p>
           </header>
@@ -92,7 +67,7 @@
           </div>
         </div>
       </section>
-      <section class="statistics">
+      <section class="statistics" id="statistics">
         <div class="container">
           <ul class="list-statistics">
             <li class="statistics-item">
@@ -126,11 +101,11 @@
           </ul>
         </div>
       </section>
-      <section class="blog">
+      <section class="blog bottom-border-polyline" id="blog">
         <div class="container">
-          <div class="head-section head-dark head-centered">
-            <h3 class="head-title">Latest Blog Posts</h3>
-            <p>
+          <div class="head-section head-dark head-centered head-blog">
+            <h3 class="head-secondary head-title">Latest Blog Posts</h3>
+            <p class="head-description">
               Information is a source of learning. But unless it is organized,
               processed, and available to the right people in a format for
               decision making, it is a burden, not a benefit.
@@ -168,7 +143,7 @@
               <div class="block-post">
                 <div class="img-block-post"></div>
                 <div class="content-block-post">
-                  <a class="title-post" href="#">Just Another Blog Post</a>
+                  <a class="title-post" href="#">Blog Post With Youtube video</a>
                   <ul class="short-info-post">
                     <li class="info-post-item">
                       <i class="icons-blog icon-author"></i>
@@ -176,18 +151,16 @@
                     </li>
                     <li class="info-post-item">
                       <i class="icons-blog icon-calendar"></i>
-                      9 November 2014
+                      24 Devember 2014
                     </li>
                     <li class="info-post-item">
                       <i class="icons-blog icon-comment"></i>
-                      3
+                      1
                     </li>
                   </ul>
                   <p class="description-post">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Officiis at, voluptatem similique tempora voluptate quia in
-                    ea minima earum consequatur eveniet, praesentium illum error
-                    delectus optio nobis eaque distinctio! Suscipit nostrum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique 
+                    tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio.
                   </p>
                   <a class="btn btn-light read-more" href="#">Read more</a>
                 </div>
@@ -195,7 +168,7 @@
               <div class="block-post">
                 <div class="img-block-post"></div>
                 <div class="content-block-post">
-                  <a class="title-post" href="#">Just Another Blog Post</a>
+                  <a class="title-post" href="#">This Could be Great</a>
                   <ul class="short-info-post">
                     <li class="info-post-item">
                       <i class="icons-blog icon-author"></i>
@@ -203,11 +176,11 @@
                     </li>
                     <li class="info-post-item">
                       <i class="icons-blog icon-calendar"></i>
-                      9 November 2014
+                      10 June 2014
                     </li>
                     <li class="info-post-item">
                       <i class="icons-blog icon-comment"></i>
-                      3
+                      0
                     </li>
                   </ul>
                   <p class="description-post">
@@ -223,15 +196,15 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio top-border-polyline" id="portfolio">
         <div class="head-section head-dark">
-          <h3 class="head-title">Latest portfolio</h3>
+          <h3 class="head-secondary head-title">Latest portfolio</h3>
         </div>
         <div class="list-portfolio">
           <div class="portfolio-block">
             <div class="portfolio-block-inner">
-              <h5>Big city</h5>
-              <p>Art, Photography, City</p>
+              <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
+              <p class="description-portfolio-block">Art, Photography, City</p>
               <footer>
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
@@ -246,8 +219,8 @@
           </div>
           <div class="portfolio-block">
             <div class="portfolio-block-inner">
-              <h5>Big city</h5>
-              <p>Art, Photography, City</p>
+              <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
+              <p class="description-portfolio-block">Art, Photography, City</p>
               <footer>
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
@@ -262,8 +235,8 @@
           </div>
           <div class="portfolio-block">
             <div class="portfolio-block-inner">
-              <h5>Big city</h5>
-              <p>Art, Photography, City</p>
+              <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
+              <p class="description-portfolio-block">Art, Photography, City</p>
               <footer>
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
@@ -278,8 +251,8 @@
           </div>
           <div class="portfolio-block">
             <div class="portfolio-block-inner">
-              <h5>Big city</h5>
-              <p>Art, Photography, City</p>
+              <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
+              <p class="description-portfolio-block">Art, Photography, City</p>
               <footer>
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
@@ -294,8 +267,8 @@
           </div>
           <div class="portfolio-block">
             <div class="portfolio-block-inner">
-              <h5>Big city</h5>
-              <p>Art, Photography, City</p>
+              <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
+              <p class="description-portfolio-block">Art, Photography, City</p>
               <footer>
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
@@ -310,8 +283,8 @@
           </div>
           <div class="portfolio-block">
             <div class="portfolio-block-inner">
-              <h5>Big city</h5>
-              <p>Art, Photography, City</p>
+              <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
+              <p class="description-portfolio-block">Art, Photography, City</p>
               <footer>
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
@@ -326,8 +299,8 @@
           </div>
           <div class="portfolio-block">
             <div class="portfolio-block-inner">
-              <h5>Big city</h5>
-              <p>Art, Photography, City</p>
+              <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
+              <p class="description-portfolio-block">Art, Photography, City</p>
               <footer>
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
@@ -342,8 +315,8 @@
           </div>
           <div class="portfolio-block">
             <div class="portfolio-block-inner">
-              <h5>Big city</h5>
-              <p>Art, Photography, City</p>
+              <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
+              <p class="description-portfolio-block">Art, Photography, City</p>
               <footer>
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
@@ -358,11 +331,11 @@
           </div>
         </div>
       </section>
-      <section class="contact-us">
+      <section class="contact-us" id="contact-us">
         <div class="container">
-          <div class="head-section head-dark">
-            <h3 class="head-title">Get to know us better</h3>
-            <p>
+          <div class="head-section head-dark head-contact-us">
+            <h3 class="head-secondary head-title">Get to know us better</h3>
+            <p class="head-description">
               Contact us, and we will contact you back. Want to chat? We can do
               that too.
             </p>
@@ -434,7 +407,7 @@
         </div>
       </section>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <ul class="footer-socials">
           <li class="footer-socials-item">

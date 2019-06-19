@@ -1,11 +1,10 @@
 .input-general {
     outline: none;
-    min-width: 100px;
-    width: 100%;
-    font: 15px 'secondary-light-italic', Arial, sans-serif;
-    color: #4e5860;
+    min-width: $min-width-input-general;
+    width: $width-input-general;
+    color: $color-input-general;
     padding: 17px 16px 17px;
     border: 1px solid;
-    border-image-source: linear-gradient(to bottom, transparent, #aab2bd);
+    border-image-source: $border-input-general;
     border-image-slice: 1;
 }
