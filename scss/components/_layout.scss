@@ -11,8 +11,33 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 168px;
+    padding: 0 20px;
 }
 
 .header {
     background: $color-header-bg;
 }
+
+// @include screen-x-large {
+//     .container{
+//         max-width: $screen-x-large;
+//     }
+// }
+
+// @include screen-large {
+//     .container{
+//         max-width: $screen-large;
+//     }
+// }
+
+// @include screen-medium {
+//     .container{
+//         max-width: $screen-medium;
+//     }
+// }
+
+// @include screen-small {
+//     .container{
+//         max-width: $screen-small;
+//     }
+// }

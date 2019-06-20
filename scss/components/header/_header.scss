@@ -8,3 +8,12 @@
         margin-bottom: 172px;
     }
 }
+
+@include screen-large {
+    .header{
+        
+        .header-top {
+            margin-bottom: 50px;
+        }
+    }
+}

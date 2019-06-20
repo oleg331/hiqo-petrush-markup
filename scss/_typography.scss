@@ -50,3 +50,9 @@ a {
 .textarea-general {
     @include font(15px, $secondary-light-italic);
 }
+
+@include screen-large {
+    .head-primary {
+        font-size: $font-size-primary-large
+    }
+}

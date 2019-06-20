@@ -1,6 +1,7 @@
 .navigation {
     display: flex;
     align-items: center;
+    white-space: nowrap;
     height: $height-navigation;
 
     .navigation-item {
@@ -50,4 +51,31 @@
             }
         }
     }
+}
+
+@include screen-x-large {
+    .navigation {
+        .navigation-item{
+            margin: 0 1vw 10px;
+        }
+
+        .logo {
+            margin: 20px -1vw 0 -1vw;
+        }
+    }
+}
+
+@include screen-large {
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: center;
+        height: inherit;
+        padding: 30px 0;
+
+        .navigation-item {
+
+        }
+    }
+    
+    
 }
