@@ -35,6 +35,13 @@
 
         .count-statistics-item {
             margin-bottom: 31px;
+            font-size: 40px;
+            line-height: 39px;
+        }
+        
+        .text-statistics-item {
+            letter-spacing: -0.1px;
+            @include font(25px, $primary-light);
         }
     }
 }

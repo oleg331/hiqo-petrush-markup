@@ -2,6 +2,7 @@
     background: $color-statistics-bg;
     color: $color-statistics;
     position: relative;
+    @include font-family($primary-regular);
 
     @include shape($color-parallax-bg);
 

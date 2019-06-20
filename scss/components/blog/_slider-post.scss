@@ -32,17 +32,22 @@
 
             .content-block-post {
                 padding: 21px 28px 30px 25px;
+                letter-spacing: -.1px;
+                @include font(14px, $secondary-regular);
 
                 .title-post {
                     border-bottom: 1px solid $border-title-post;
                     display: block;
                     padding-bottom: 12px;
                     margin-bottom: 14px;
+                    letter-spacing: 0.5px;
+                    @include font(25px, $primary-regular);
                 }
 
                 .short-info-post {
                     color: $color-short-info-post;
                     margin-bottom: 18px;
+                    line-height: 14px;
 
                     @include clearfix;
 
@@ -79,6 +84,8 @@
                 .description-post {
                     color: $color-description-post;
                     margin-bottom: 20px;
+                    line-height: 25px;
+                    letter-spacing: .1px;
                 }
             }
         }

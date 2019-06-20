@@ -17,6 +17,7 @@
 
         .copyrights {
             margin-right: 100px;
+            @include font(14px, $secondary-light);
         }
 
         .footer-anchor {

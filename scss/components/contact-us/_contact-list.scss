@@ -5,11 +5,13 @@
     padding: 0 29px;
     box-sizing: border-box;
 
-    .contact-list-item {
+    &-item {
         display: flex;
         align-items: center;
         margin-bottom: 66px;
         color: $color-contact-list-item;
+        @include font(14px, $secondary-regular);
+        line-height: 24px;
 
         .icons-contact {
             display: inline-block;

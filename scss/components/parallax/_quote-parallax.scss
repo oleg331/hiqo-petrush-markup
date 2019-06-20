@@ -6,6 +6,8 @@
     blockquote {
         position: relative;
         margin-bottom: 40px;
+        letter-spacing: 0.35px;
+        @include font(30px, $secondary-light-italic);
 
         &:before {
             content: '';
@@ -16,5 +18,9 @@
             height: 40px;
             background: url(../../assets/img/icon-quote.png) 0 0 no-repeat;
         }
+    }
+
+    .author-quote-parallax {
+        @include font(30px, $secondary-light);
     }
 }

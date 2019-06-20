@@ -9,6 +9,20 @@ $color-link-base-active: #ff3c1f;
 
 $width-container: 1170px;
 
+// fonts
+
+$primary-light: 'Raleway-Light';
+$primary-regular: 'Raleway-Regular';
+$primary-semibold: 'Raleway-SemiBold';
+
+$secondary-light: 'OpenSans-Light';
+$secondary-light-italic: 'OpenSans-LightItalic';
+$secondary-regular: 'OpenSans-Regular';
+$secondary-semibold: 'OpenSans-SemiBold';
+
+$primary-name-folder: 'raleway';
+$secondary-name-folder: 'opensans';
+
 // form
 $color-btn: #fff;
 $color-input-general: #4e5860;
@@ -91,6 +105,3 @@ $color-bg-footer: #2c2c2c;
 $color-border-footer: #d4d4d4;
 $color-anchor-footer: #57595b;
 $height-container-footer: 128px;
-
-
-
