@@ -38,6 +38,9 @@ $min-height-textarea-general: 214px;
 
 
 // head-section
+$font-size-primary: 70px;
+$font-size-primary-large: 6vw;
+
 $color-head-section-dark: #303030;
 $color-paragraph-head-dark: #4e5860;
 $bg-line-head-title-light: #fff;
@@ -105,3 +108,19 @@ $color-bg-footer: #2c2c2c;
 $color-border-footer: #d4d4d4;
 $color-anchor-footer: #57595b;
 $height-container-footer: 128px;
+
+// breakpoints
+$breakpoints: ( x-large: 1200px, large: 992px, medium: 768px, small: 576px );
+$screen-small: 576px; // Small devices (landscape phones, 576px and up)
+$screen-medium: 768px; // Medium devices (tablets, 768px and up)
+$screen-large: 992px; // Large devices (desktops, 992px and up)
+$screen-x-large: 1200px; // Extra large devices (large desktops, 1200px and up)
+
+// screen-x-large
+
+// screen-large
+
+
+// screen-medium-large
+
+// screen-smal-large
