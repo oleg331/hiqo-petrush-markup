@@ -5,8 +5,8 @@
 
     .portfolio-block-inner {
         transition: 0.2s opacity;
-        width: 100%;
-        height: 100%;
+        width: $width-portfolio-block-inner;
+        height: $height-portfolio-block-inner;
         box-sizing: border-box;
         padding: 43px 0 0 0;
         text-align: center;
@@ -16,12 +16,8 @@
             opacity: 1;
         }
 
-        h5 {
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 15px;
+        .title-portoflio-block {
+            margin-bottom: 15px;
         }
 
         footer {

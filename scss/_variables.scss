@@ -4,47 +4,59 @@ $color-primary: #fff000;
 $color-primary-dark: #272d32;
 $color-primary-light: #272d32;
 $color-text-logo: #fafafa;
-$color-link-base: #4e5860;
+$color-link-base: #555;
 $color-link-base-active: #ff3c1f;
-$color-btn: #fff;
-$border-btn-dark: #fff;
-$bg-btn-dark-active: #ff3c1f;
-$border-btn-dark-active: #ff3c1f;
 
 $width-container: 1170px;
 
+// form
+$color-btn: #fff;
+$color-input-general: #4e5860;
+$color-textarea-general: #4e5860;
+$bg-btn-dark-active: #ff3c1f;
+$border-btn-dark: #fff;
+$border-btn-dark-active: #ff3c1f;
+$border-textarea-general: linear-gradient(to bottom, transparent, #aab2bd);
+$border-input-general: linear-gradient(to bottom, transparent, #aab2bd);
+$width-textarea-general: 100%!important;
+$width-input-general: 100%;
+$min-width-input-general: 100%;
+$min-height-textarea-general: 214px;
+
+
 // head-section
-$width-line-head-title: 100px;
-$height-line-head-title: 1px;
 $color-head-section-dark: #303030;
+$color-paragraph-head-dark: #4e5860;
 $bg-line-head-title-light: #fff;
 $bg-line-head-title-dark: linear-gradient(to right, #4e5860, #ff3c1f);
-$color-paragraph-head-dark: #4e5860;
+$width-line-head-title: 100px;
 $width-paragraph-head-title: 775px;
+$height-line-head-title: 1px;
 
 // polyline
 $color-polyline: #b1b8c4;
 
 // header
-$color-header-bg: #3d4148;
+$color-header-bg: #3a3e47;
 $color-header-base: #fafafa;
 
 // navigation
-$height-navigation: 132px;
 $bg-line-navigation-item: linear-gradient(to right, #ff3c1f, #902616);
 $width-line-navigation-item-active: 100%;
-
 $width-contact-list: 400px;
+$height-navigation: 128px;
 $height-footer-portfolio-block: 74px;
 
+
 // slider
-$bg-slider-dot-active: #fff;
 $color-border-slider-dot: #fff;
 $color-border-slider-dot-active: #abb3c0;
+$bg-slider-dot-active: #fff;
 $width-description-slide: 950px;
 
 // paralax
 $color-parallax-bg: #f14a37;
+$color-parallax: #fff;
 
 // statistics
 $color-statistics: #fff;
@@ -52,22 +64,25 @@ $color-statistics-bg: #616d7b;
 $width-statistics-item: 25%;
 
 // blog
-$height-img-block-post: 245px;
-$border-block-post: #e6e9ed;
-$bg-img-block-post: #656d78;
-$border-title-post: #eaeaea;
 $color-posts-bg: #fff;
 $color-short-info-post: #303030;
-$color-description-post: #4e5860;
+$color-description-post: #838788;
+$bg-img-block-post: #656d78;
+$border-block-post: #e6e9ed;
+$border-title-post: #eaeaea;
+$height-img-block-post: 243px;
 
 // portfolio
-$width-list-portfolio: 100%;
 $color-list-portfolio: #fff;
-$width-list-icons-portfolio-block: 160px;
-$height-icons-portfolio: 22px;
+$bg-list-portfolio: #6c7681;;
 $bg-portfolio-block: #656d78;
 $bg-portfolio-footer: #dddee0;
 $bg-border-footer-portfolio-block: #656d77;
+$width-portfolio-block-inner: 100%;
+$width-list-portfolio: 100%;
+$width-list-icons-portfolio-block: 160px;
+$height-portfolio-block-inner: 100%;
+$height-icons-portfolio: 22px;
 
 // contacts
 $color-contact-list-item: #4e5860;
@@ -75,6 +90,7 @@ $color-contact-list-item: #4e5860;
 // footer
 $color-bg-footer: #2c2c2c;
 $color-border-footer: #d4d4d4;
+$color-anchor-footer: #57595b;
 $height-container-footer: 128px;
 
 

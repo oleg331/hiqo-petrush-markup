@@ -14,8 +14,9 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(auto, auto));
         grid-template-rows: repeat(2, 240px);
-        grid-gap: 1px;
+        grid-gap: 2px;
         width: $width-list-portfolio;
+        background: $bg-list-portfolio;
         color: $color-list-portfolio;
     }
 }
