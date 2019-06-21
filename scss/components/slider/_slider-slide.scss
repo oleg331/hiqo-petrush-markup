@@ -28,5 +28,38 @@
 }
 
 @include screen-large {
-    
+    .slider-header{
+        .slider-slide{
+            padding-bottom: 100px;
+
+            .title-slider-slide{
+                &:after {
+                    width: 100%;
+                    background-position: center top;
+                }
+            }
+
+            .description-slider-slide {
+                margin-bottom: 30px;
+                font-size: $font-size-description-slider-slide-large;
+                line-height: $line-height-description-slider-slide-large;
+            }
+        }
+    }
+}
+
+@include screen-small {
+    .slider-header {
+        .slider-slide {
+            .title-slider-slide {
+                padding-bottom: 22px;
+                margin-bottom: 20px;
+            }
+
+            .description-slider-slide {
+                font-size: $font-size-description-slider-slide-small;
+                line-height: $line-height-description-slider-slide-small;
+            }
+        }
+    }
 }

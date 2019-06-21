@@ -56,3 +56,15 @@ a {
         font-size: $font-size-primary-large
     }
 }
+
+@include screen-medium {
+    .head-primary {
+        font-size: $font-size-primary-medium
+    }
+}
+
+@include screen-small {
+    .head-primary {
+        font-size: $font-size-primary-small
+    }
+}

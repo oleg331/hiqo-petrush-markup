@@ -24,3 +24,17 @@
         }
     }
 }
+
+@include screen-large {
+    .slider-arrows {
+        .slider-arrow {
+            &.slider-arrow-left {
+                left: -33px;
+            }
+
+            &.slider-arrow-right {
+                right: -33px;
+            }
+        }
+    }
+}

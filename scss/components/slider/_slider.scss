@@ -3,3 +3,16 @@
     margin: 0 auto;
     padding: 0 120px;
 }
+
+@include screen-large {
+    .slider {
+        text-align: center;
+        padding: 0 50px;
+    }
+}
+
+@include screen-small {
+    .slider {
+        padding: 0 15px;
+    }
+}
