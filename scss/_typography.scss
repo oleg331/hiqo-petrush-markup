@@ -67,4 +67,11 @@ a {
     .head-primary {
         font-size: $font-size-primary-small
     }
+
+    // form
+
+    .btn {
+        font-size: $font-size-btn-small;
+        line-height: $line-height-btn-small;
+    }
 }

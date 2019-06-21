@@ -34,7 +34,9 @@ $border-textarea-general: linear-gradient(to bottom, transparent, #aab2bd);
 $border-input-general: linear-gradient(to bottom, transparent, #aab2bd);
 $width-textarea-general: 100%!important;
 $width-input-general: 100%;
+$width-btn: 148px;
 $min-height-textarea-general: 214px;
+$height-btn: 48px;
 
 
 // head-section
@@ -135,3 +137,9 @@ $line-height-description-slider-slide-large: 6vw;
 // slider
 $font-size-description-slider-slide-small: 28px;
 $line-height-description-slider-slide-small: 32px;
+
+// form
+$font-size-btn-small: 12px;
+$line-height-btn-small: 40px;
+$width-btn-small: 100px;
+$height-btn-small: 40px;
