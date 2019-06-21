@@ -70,7 +70,7 @@
         }
 
         .head-description{
-            line-height: 25px;
+            line-height: $line-height-head-description;
         }
     }
 
@@ -82,5 +82,19 @@
 
     .head-description{
         letter-spacing: .05px;
+    }
+}
+
+@include screen-large {
+    .head-section,
+    .head-section.head-blog,
+    .head-section.head-contact-us {
+        margin-bottom: 40px;
+    }
+}
+
+@include screen-medium {
+    .head-description {
+        line-height: $line-height-head-description;
     }
 }

@@ -38,7 +38,6 @@ $width-btn: 148px;
 $min-height-textarea-general: 214px;
 $height-btn: 48px;
 
-
 // head-section
 $font-size-primary: 70px;
 $color-head-section-dark: #303030;
@@ -48,6 +47,7 @@ $bg-line-head-title-dark: linear-gradient(to right, #4e5860, #ff3c1f);
 $width-line-head-title: 100px;
 $width-paragraph-head-title: 775px;
 $height-line-head-title: 1px;
+$line-height-head-description: 25px;
 
 // polyline
 $color-polyline: #b1b8c4;
@@ -63,21 +63,27 @@ $width-contact-list: 400px;
 $height-navigation: 128px;
 $height-footer-portfolio-block: 74px;
 
-
 // slider
 $color-border-slider-dot: #fff;
 $color-border-slider-dot-active: #abb3c0;
 $bg-slider-dot-active: #fff;
 $width-description-slide: 950px;
+$height-slider-slide: 610px;
 
 // paralax
 $color-parallax-bg: #f14a37;
 $color-parallax: #fff;
+$font-size-block-quote: 30px;
+$font-size-author-quote: 30px;
+$width-quote-parallax: 893px;
 
 // statistics
 $color-statistics: #fff;
 $color-statistics-bg: #616d7b;
 $width-statistics-item: 25%;
+$font-size-count-statistics: 40px;
+$font-size-text-statistics: 25px;
+$line-height-count-statistics: 39px;
 
 // blog
 $color-posts-bg: #fff;
@@ -87,6 +93,9 @@ $bg-img-block-post: #656d78;
 $border-block-post: #e6e9ed;
 $border-title-post: #eaeaea;
 $height-img-block-post: 243px;
+$height-description-post: 150px;
+$gap-block-post: 30px / 1.5;
+$count-block-post-visible: 3;
 
 // portfolio
 $color-list-portfolio: #fff;
@@ -111,35 +120,78 @@ $height-container-footer: 128px;
 
 // breakpoints
 $breakpoints: ( x-large: 1200px, large: 992px, medium: 768px, small: 576px );
-$screen-small: 576px; // Small devices (landscape phones, 576px and up)
-$screen-medium: 768px; // Medium devices (tablets, 768px and up)
-$screen-large: 992px; // Large devices (desktops, 992px and up)
-$screen-x-large: 1200px; // Extra large devices (large desktops, 1200px and up)
+$screen-x-large: 1200px;
+$screen-large: 992px;
+$screen-medium: 768px;
+$screen-small: 576px;
 
 // ----- screen-x-large -----
+$height-slider-slide-x-large: 663px;
+
 
 // ----- screen-large -----
 
 // head-section
 $font-size-primary-large: 7vw;
-$font-size-primary-medium: 9vw;
-$font-size-primary-small: 38px;
+$font-size-secondary-large: 4.5vw;
 
 // slider
 $font-size-description-slider-slide-large: 5vw;
 $line-height-description-slider-slide-large: 6vw;
+$height-slider-slide-large: 583px;
 
+// paralax
+$font-size-block-quote-large: 3vw;
+$font-size-author-quote-large: 3vw;
+$width-quote-parallax-large: 600px;
+
+// statistics
+$font-size-count-statistics-large: 3.5vw;
+$font-size-text-statistics-large: 2.5vw;
+$line-height-count-statistics-large: 3.9vw;
+
+// blog
+$count-block-post-visible-large: 2;
+$height-description-post-large: 98px;
 
 // ----- screen-medium -----
 
-// ----- screen-small -----
+// head-section
+$font-size-primary-medium: 9vw;
+$font-size-secondary-medium: 6vw;
 
-// slider
-$font-size-description-slider-slide-small: 28px;
-$line-height-description-slider-slide-small: 32px;
+// paralax
+$font-size-block-quote-medium: 3.4vw;
+$font-size-author-quote-medium: 3.4vw;
+
+// statistics
+$font-size-count-statistics-medium: 30px;
+$font-size-text-statistics-medium: 24px;
+$line-height-count-statistics-medium: inherit;
+$width-statistics-item-medium: 40%;
+
+// ----- screen-small -----
 
 // form
 $font-size-btn-small: 12px;
 $line-height-btn-small: 40px;
 $width-btn-small: 100px;
 $height-btn-small: 40px;
+
+// head-section
+$font-size-primary-small: 38px;
+$font-size-secondary-small: 30px;
+
+// slider
+$font-size-description-slider-slide-small: 28px;
+$line-height-description-slider-slide-small: 32px;
+
+// paralax
+$font-size-block-quote-small: 20px;
+$font-size-author-quote-small: 20px;
+
+// statistics
+$width-statistics-item-small: 100%;
+
+// blog
+$count-block-post-visible-medium: 1;

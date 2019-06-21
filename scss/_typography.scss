@@ -55,17 +55,29 @@ a {
     .head-primary {
         font-size: $font-size-primary-large
     }
+
+    .head-secondary {
+        font-size: $font-size-secondary-large;
+    }
 }
 
 @include screen-medium {
     .head-primary {
         font-size: $font-size-primary-medium
     }
+
+    .head-secondary {
+        font-size: $font-size-secondary-medium;
+    }
 }
 
 @include screen-small {
     .head-primary {
-        font-size: $font-size-primary-small
+        font-size: $font-size-primary-small;
+    }
+
+    .head-secondary {
+        font-size: $font-size-secondary-small;
     }
 
     // form

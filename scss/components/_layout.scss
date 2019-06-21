@@ -5,6 +5,12 @@ body {
 .container {
     max-width: $width-container;
     margin: 0 auto;
+    padding: 0 15px;
+    min-width: 320px;
+
+    @include screen-medium {
+        box-sizing: border-box;
+    }
 }
 
 .header-top {
@@ -17,27 +23,3 @@ body {
 .header {
     background: $color-header-bg;
 }
-
-// @include screen-x-large {
-//     .container{
-//         max-width: $screen-x-large;
-//     }
-// }
-
-// @include screen-large {
-//     .container{
-//         max-width: $screen-large;
-//     }
-// }
-
-// @include screen-medium {
-//     .container{
-//         max-width: $screen-medium;
-//     }
-// }
-
-// @include screen-small {
-//     .container{
-//         max-width: $screen-small;
-//     }
-// }
