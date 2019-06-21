@@ -35,13 +35,72 @@
 
         .count-statistics-item {
             margin-bottom: 31px;
-            font-size: 40px;
-            line-height: 39px;
+            font-size: $font-size-count-statistics;
+            line-height: $line-height-count-statistics;
         }
-        
+
         .text-statistics-item {
             letter-spacing: -0.1px;
-            @include font(25px, $primary-light);
+            @include font($font-size-text-statistics, $primary-light);
         }
+    }
+}
+
+@include screen-x-large {
+    .statistics-item {
+        text-align: center;
+
+        .icons-statistic {
+            float: none;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .inner-statistics-item {
+            .count-statistics-item {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@include screen-large {
+    .statistics-item {
+        .inner-statistics-item {
+            .count-statistics-item {
+                font-size: $font-size-count-statistics-large;
+                line-height: $line-height-count-statistics-large;
+            }
+
+            .text-statistics-item {
+                font-size: $font-size-text-statistics-large;
+            }
+        }
+    }
+}
+
+@include screen-medium {
+    .statistics-item {
+        width: $width-statistics-item-medium;
+        float: none;
+        display: inline-block;
+        margin-bottom: 60px;
+
+        .inner-statistics-item {
+            .count-statistics-item {
+                font-size: $font-size-count-statistics-medium;
+                line-height: $line-height-count-statistics-medium;
+            }
+
+            .text-statistics-item {
+                font-size: $font-size-text-statistics-medium;
+            }
+        }
+    }
+}
+
+@include screen-small {
+    .statistics-item {
+        width: $width-statistics-item-small;
     }
 }

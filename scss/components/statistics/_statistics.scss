@@ -12,3 +12,21 @@
         @include clearfix;
     }
 }
+
+@include screen-large {
+    .statistics {
+        .list-statistics {
+            padding: 66px 0 60px;
+        }
+    }
+}
+
+@include screen-medium {
+    .statistics {
+        .list-statistics {
+            font-size: 0;
+            text-align: center;
+            padding-bottom: 0;
+        }
+    }
+}
