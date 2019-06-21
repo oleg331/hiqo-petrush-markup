@@ -11,3 +11,21 @@
         margin-bottom: 92px;
     }
 }
+
+@include screen-large {
+    .blog{
+        .container {
+            padding-top: 50px;
+        }
+
+        .head-section {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include screen-medium {
+    .blog{
+        padding-bottom: 50px;
+    }
+}

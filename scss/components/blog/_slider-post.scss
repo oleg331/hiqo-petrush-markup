@@ -1,92 +1,153 @@
 .slider-post {
 
     .slider-slide {
-        display: flex;
+        overflow: hidden;
+        font-size: 0;
+        height: $height-slider-slide;
 
         .block-post {
-            display: block;
-            flex: 0 0 370px;
+            display: inline-block;
             border: 1px solid $border-block-post;
             box-sizing: border-box;
+            width: calc(100% / #{$count-block-post-visible} - #{$gap-block-post});
+            height: 100%;
+            vertical-align: top;
 
             &:not(:last-child) {
-                margin-right: 30px;
+                margin-right: $gap-block-post;
+            }
+        }
+    }
+}
+
+.img-block-post {
+    height: $height-img-block-post;
+    background: $bg-img-block-post;
+    position: relative;
+
+    &:before {
+        content: "";
+        border-top: 37px solid $color-posts-bg;
+        border-left: 33px solid transparent;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: calc(50% - 17px);
+        height: 0;
+    }
+}
+
+.content-block-post {
+    padding: 21px 28px 30px 25px;
+    letter-spacing: -.1px;
+    @include font(14px, $secondary-regular);
+
+    .title-post {
+        border-bottom: 1px solid $border-title-post;
+        display: block;
+        padding-bottom: 12px;
+        margin-bottom: 14px;
+        letter-spacing: 0.5px;
+        @include font(25px, $primary-regular);
+    }
+
+    .short-info-post {
+        color: $color-short-info-post;
+        margin-bottom: 8px;
+        line-height: 14px;
+
+        @include clearfix;
+    }
+
+    .info-post-item {
+        float: left;
+        margin-bottom: 10px;
+
+        &:not(:last-child) {
+            margin-right: 14px;
+        }
+
+        .icons-blog {
+            display: inline-block;
+            float: left;
+            background: url(../../assets/img/icons-blog.png) 0 0 no-repeat;
+            width: 15px;
+            height: 15px;
+            margin: 0 15px 0 0;
+
+            &.icon-author {
+                background-position: 0 0;
             }
 
-            .img-block-post {
-                height: $height-img-block-post;
-                background: $bg-img-block-post;
-                position: relative;
-
-                &:before {
-                    content: "";
-                    border-top: 37px solid $color-posts-bg;
-                    border-left: 33px solid transparent;
-                    position: absolute;
-                    top: -1px;
-                    right: -1px;
-                    width: calc(50% - 17px);
-                    height: 0;
-                }
+            &.icon-calendar {
+                background-position: 0 -15px;
             }
 
-            .content-block-post {
-                padding: 21px 28px 30px 25px;
-                letter-spacing: -.1px;
-                @include font(14px, $secondary-regular);
+            &.icon-comment {
+                background-position: 0 -30px;
+            }
+        }
+    }
 
-                .title-post {
-                    border-bottom: 1px solid $border-title-post;
-                    display: block;
-                    padding-bottom: 12px;
-                    margin-bottom: 14px;
-                    letter-spacing: 0.5px;
-                    @include font(25px, $primary-regular);
-                }
+    .description-post {
+        color: $color-description-post;
+        margin-bottom: 20px;
+        line-height: 25px;
+        letter-spacing: .1px;
+        max-height: $height-description-post;
+        overflow: hidden;
+    }
+}
 
-                .short-info-post {
-                    color: $color-short-info-post;
-                    margin-bottom: 18px;
-                    line-height: 14px;
+@include screen-x-large {
+    .slider-post {
 
-                    @include clearfix;
+        .slider-slide {
+            height: $height-slider-slide-x-large;
+        }
+    }
+}
 
-                    .info-post-item {
-                        float: left;
+@include screen-large {
+    .slider-post {
 
-                        &:not(:last-child) {
-                            margin-right: 14px;
-                        }
+        .slider-slide {
+            height: $height-slider-slide-large;
+    
+            .block-post {
+                width: calc(100% / #{$count-block-post-visible-large} - #{$gap-block-post});
+            }
+        }
+    }
 
-                        .icons-blog {
-                            display: inline-block;
-                            float: left;
-                            background: url(../../assets/img/icons-blog.png) 0 0 no-repeat;
-                            width: 15px;
-                            height: 15px;
-                            margin: 0 15px 0 0;
+    .content-block-post {
 
-                            &.icon-author {
-                                background-position: 0 0;
-                            }
+        .description-post {
+            max-height: $height-description-post-large;
+        }
 
-                            &.icon-calendar {
-                                background-position: 0 -15px;
-                            }
+        .info-post-item {
 
-                            &.icon-comment {
-                                background-position: 0 -30px;
-                            }
-                        }
-                    }
-                }
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
 
-                .description-post {
-                    color: $color-description-post;
-                    margin-bottom: 20px;
-                    line-height: 25px;
-                    letter-spacing: .1px;
-                }
+            .icons-blog {
+                margin-right: 9px;
+            }
+        }
+    }
+}
+
+@include screen-medium {
+    .slider-post {
+        
+        .slider-slide {
+            height: inherit;
+
+            .block-post {
+                width: calc(100% / #{$count-block-post-visible-medium});
+                margin-bottom: 20px;
             }
         }
     }
