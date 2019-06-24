@@ -16,6 +16,14 @@
         }
     }
 
+    .btn {
+        display: none;
+
+        @include screen-medium {
+            display: block;
+        }
+    }
+
     @include screen-small {
         flex-flow: column wrap;
     
