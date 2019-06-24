@@ -14,3 +14,13 @@
         }
     }
 }
+
+@include screen-large {
+    .parallax {
+        padding-bottom: 75px;
+
+        .container {
+            padding-top: 50px;
+        }
+    }
+}

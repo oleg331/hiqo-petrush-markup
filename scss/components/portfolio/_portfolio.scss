@@ -7,6 +7,10 @@
         .head-title {
             padding-bottom: 15px;
             margin-bottom: 100px;
+
+            @include screen-large {
+                margin-bottom: 50px;
+            }
         }
     }
 
@@ -18,5 +22,25 @@
         width: $width-list-portfolio;
         background: $bg-list-portfolio;
         color: $color-list-portfolio;
+
+        @include screen-x-large {
+            grid-template-columns: repeat(3, minmax(auto, auto));
+            grid-template-rows: repeat(3, 240px);
+        }
+
+        @include screen-large {
+            grid-template-columns: repeat(2, minmax(auto, auto));
+            grid-template-rows: repeat(4, 240px);
+        }
+
+        @include screen-medium {
+            grid-template-columns: repeat(1, minmax(auto, auto));
+            grid-template-rows: repeat(8, 240px);
+            grip-gap: 5px;
+        }
+
+        @include screen-small {
+            grid-gap: 10px;
+        }
     }
 }

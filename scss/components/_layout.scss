@@ -5,12 +5,19 @@ body {
 .container {
     max-width: $width-container;
     margin: 0 auto;
+    padding: 0 15px;
+    min-width: 320px;
+
+    @include screen-medium {
+        box-sizing: border-box;
+    }
 }
 
 .header-top {
     display: flex;
     justify-content: center;
     margin-bottom: 168px;
+    padding: 0 20px;
 }
 
 .header {

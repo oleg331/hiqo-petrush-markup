@@ -1,11 +1,11 @@
 body {
-    @include font(18px, 'primary-regular');
+    @include font(18px, $primary-regular);
 }
 
 a {
     color: $color-link-base;
     text-decoration: none;
-    transition: 0.2s color;
+    transition: .2s color;
 
     &:hover {
         color: $color-link-base-active;
@@ -15,14 +15,14 @@ a {
 .head-primary {
     position: relative;
     color: $color-header-base;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
     padding-bottom: 31px;
     margin-bottom: 26px;
-    @include font(70px, 'primary-semibold');
+    @include font(70px, $primary-semibold);
 }
 
 .head-secondary {
-    @include font(45px, 'primary-semibold');
+    @include font(45px, $primary-semibold);
 }
 
 .head-extra-secondary {
@@ -36,107 +36,54 @@ a {
 // form
 
 .btn {
-    @include font(16px, 'primary-semibold');
+    @include font(16px, $primary-semibold);
     text-transform: uppercase;
     text-decoration: none;
     line-height: 50px;
 }
 
 .input-general {
-    @include font(15px, 'secondary-light-italic');
+    @include font(15px, $secondary-light-italic);
     font-weight: bold;
 }
 
 .textarea-general {
-    @include font(15px, 'secondary-light-italic');
+    @include font(15px, $secondary-light-italic);
 }
 
-// slider
-
-.description-slider-slide {
-    letter-spacing: 0.5px;
-    line-height: 64px;
-    @include font(50px, 'primary-light');
-}
-
-// paralax
-
-.quote-parallax {
-    blockquote {
-        letter-spacing: 0.35px;
-        @include font(30px, 'secondary-light-italic');
+@include screen-large {
+    .head-primary {
+        font-size: $font-size-primary-large
     }
 
-    .author-quote-parallax {
-        @include font(30px, 'secondary-light');
+    .head-secondary {
+        font-size: $font-size-secondary-large;
     }
 }
 
-// statistics
-
-.statistics {
-    @include font-family('primary-regular');
-
-    .count-statistics-item {
-        font-size: 40px;
-        line-height: 39px;
+@include screen-medium {
+    .head-primary {
+        font-size: $font-size-primary-medium
     }
 
-    .text-statistics-item {
-        letter-spacing: -0.1px;
-        @include font(25px, 'primary-light');
+    .head-secondary {
+        font-size: $font-size-secondary-medium;
     }
 }
 
-// blog
-
-.blog {
-    .content-block-post {
-        letter-spacing: -.1px;
-        @include font(14px, 'secondary-regular');
+@include screen-small {
+    .head-primary {
+        font-size: $font-size-primary-small;
     }
 
-    .title-post {
-        letter-spacing: 0.5px;
-        @include font(25px, 'primary-regular');
+    .head-secondary {
+        font-size: $font-size-secondary-small;
     }
 
-    .short-info-post {
-        line-height: 14px;
+    // form
+
+    .btn {
+        font-size: $font-size-btn-small;
+        line-height: $line-height-btn-small;
     }
-
-    .description-post {
-        line-height: 25px;
-        letter-spacing: .1px;
-    }
-}
-
-
-// portfolio
-
-.portfolio-block-inner {
-    @include font-family('secondary-semibold');
-
-    .description-portfolio-block {
-        @include font-family('secondary-light');
-        font-size: 15px;
-        letter-spacing: .5px;
-    }
-}
-
-.portfolio-block {
-    @include font-family('secondary-semibold');
-}
-
-// contacts
-
-.contact-list-item {
-    @include font(14px, 'secondary-regular');
-    line-height: 24px;
-}
-
-// footer
-
-.copyrights {
-    @include font(14px, 'secondary-light');
 }

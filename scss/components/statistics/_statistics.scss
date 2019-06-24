@@ -2,6 +2,7 @@
     background: $color-statistics-bg;
     color: $color-statistics;
     position: relative;
+    @include font-family($primary-regular);
 
     @include shape($color-parallax-bg);
 
@@ -9,5 +10,23 @@
         padding: 91px 0 93px;
 
         @include clearfix;
+    }
+}
+
+@include screen-large {
+    .statistics {
+        .list-statistics {
+            padding: 66px 0 60px;
+        }
+    }
+}
+
+@include screen-medium {
+    .statistics {
+        .list-statistics {
+            font-size: 0;
+            text-align: center;
+            padding-bottom: 0;
+        }
     }
 }

@@ -2,9 +2,23 @@
     background: $bg-portfolio-block;
     position: relative;
     padding-bottom: $height-footer-portfolio-block;
+    @include font-family($secondary-semibold);
+
+    @include screen-x-large {
+        &:first-child {
+            grid-column: span 2;
+        }
+    }
+
+    @include screen-large {
+        &:first-child {
+            grid-column: inherit;
+        }
+    }
 
     .portfolio-block-inner {
-        transition: 0.2s opacity;
+        @include font-family($secondary-semibold);
+        transition: .2s opacity;
         width: $width-portfolio-block-inner;
         height: $height-portfolio-block-inner;
         box-sizing: border-box;
@@ -20,26 +34,36 @@
             margin-bottom: 15px;
         }
 
-        footer {
-            display: flex;
-            justify-content: flex-end;
-            background: $bg-portfolio-footer;
-            height: $height-footer-portfolio-block;
-            left: 0;
-            right: 0;
-            position: absolute;
-            bottom: 0px;
+        .description-portfolio-block {
+            @include font-family($secondary-light);
+            font-size: 15px;
+            letter-spacing: .5px;
+        }
 
-            &:before {
-                content: '';
-                border-top: 37px solid $bg-border-footer-portfolio-block;
-                border-right: 34px solid transparent;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: calc(50% - 14px);
-                height: 0;
-            }
+        @include screen-medium {
+            opacity: 1;
+        }
+    }
+
+    .footer-portfolio-block {
+        display: flex;
+        justify-content: flex-end;
+        background: $bg-portfolio-footer;
+        height: $height-footer-portfolio-block;
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 0px;
+
+        &:before {
+            content: '';
+            border-top: 37px solid $bg-border-footer-portfolio-block;
+            border-right: 34px solid transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(50% - 14px);
+            height: 0;
         }
     }
 }

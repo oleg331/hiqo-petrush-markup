@@ -6,5 +6,30 @@
         display: flex;
         justify-content: center;
         margin-bottom: 172px;
+
+        @include screen-large {
+            margin-bottom: 50px;
+
+            .container {
+                box-sizing: border-box;
+                padding: 0;
+            }
+        }
+
+        @include screen-large {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include screen-medium {
+        .container{
+            width: 100%;
+
+            @include clearfix;
+
+            .navigation {
+                float: left;
+            }
+        }
     }
 }

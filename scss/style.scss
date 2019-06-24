@@ -2,6 +2,7 @@
 @import "mixins/clearfix";
 @import "mixins/shape";
 @import "mixins/font";
+@import "mixins/breakpoints";
 
 @import "vendor/reset";
 
@@ -49,3 +50,4 @@
 @import "components/footer/footer";
 @import "components/footer/footer-socials";
 
+@import "components/responsive";

@@ -2,28 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     
   <link rel="stylesheet" href="/assets/style.css" /></head>
   <body>
     <div class="wrapper">
       <header class="header" id="header">
+
         <nav class="header-top">
           <div class="container">
+            <!-- navigation desktop -->
             <ul class="navigation">
-              <li class="navigation-item active"><a href="index.html">Home</a></li>
-              <li class="navigation-item"><a href="#portfolio">Portfolio</a></li>
-              <li class="navigation-item"><a href="#blog">Blog</a></li>
-              <li class="navigation-item">
-                <a class="logo" href="index.html">
+              <li class="navigation-item hidden-medium active">
+                <a class="link-navigation-item" href="index.html">Home</a>
+              </li>
+              <li class="navigation-item hidden-medium">
+                <a class="link-navigation-item" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="navigation-item hidden-medium">
+                <a class="link-navigation-item" href="#blog">Blog</a>
+              </li>
+              <li class="navigation-item navigation-item-logo">
+                <a class="link-navigation-item logo" href="index.html">
                   <img src="./assets/img/logo.png" alt="logo" />
-                  Expire
+                  <span class="text-logo hidden-large">Expire</span>
                 </a>
               </li>
-              <li class="navigation-item"><a href="#">Pages</a></li>
-              <li class="navigation-item"><a href="#contact-us">About us</a></li>
-              <li class="navigation-item"><a href="#contact-us">Contact</a></li>
+              <li class="navigation-item hidden-medium">
+                <a class="link-navigation-item" href="#">Pages</a>
+              </li>
+              <li class="navigation-item hidden-medium">
+                <a class="link-navigation-item" href="#contact-us">About us</a>
+              </li>
+              <li class="navigation-item hidden-medium">
+                <a class="link-navigation-item" href="#contact-us">Contact</a>
+              </li>
             </ul>
+            <!-- burder mobile -->
+            <div class="burger-menu visible-medium">
+              <input type="checkbox" id="burger-shower" class="burger-shower">
+              <label class="label-icon-burger" for="burger-shower">
+                  <svg class="icon-burger" viewBox="0 0 100 100" width="80" fill="#fff">
+                    <path class="line-burger line-top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line-burger line-middle" d="m 30,50 h 40" />
+                    <path class="line-burger line-bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                  </svg>
+              </label>
+              <nav class="burger-dropdown">
+                <ul class="navigation navigation-burger">
+                    <li class="navigation-item active"><a class="link-navigation-item" href="index.html">Home</a></li>
+                    <li class="navigation-item"><a class="link-navigation-item" href="#portfolio">Portfolio</a></li>
+                    <li class="navigation-item"><a class="link-navigation-item" href="#blog">Blog</a></li>
+                    <li class="navigation-item"><a class="link-navigation-item" href="#">Pages</a></li>
+                    <li class="navigation-item"><a class="link-navigation-item" href="#contact-us">About us</a></li>
+                    <li class="navigation-item"><a class="link-navigation-item" href="#contact-us">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </nav>
 
@@ -37,7 +73,7 @@
               <a class="btn btn-slider-buttons btn-dark" href="#">Explore</a>
               <a class="btn btn-slider-buttons btn-dark" href="#">Learn more</a>
             </div>
-            <div class="slider-arrows">
+            <div class="slider-arrows hidden-small">
               <div class="slider-arrow slider-arrow-left"></div>
               <div class="slider-arrow slider-arrow-right"></div>
             </div>
@@ -205,7 +241,7 @@
             <div class="portfolio-block-inner">
               <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
               <p class="description-portfolio-block">Art, Photography, City</p>
-              <footer>
+              <footer class="footer-portfolio-block">
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
                     <a class="icons-portfolio icon-ti-link" href="#"></a>
@@ -221,7 +257,7 @@
             <div class="portfolio-block-inner">
               <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
               <p class="description-portfolio-block">Art, Photography, City</p>
-              <footer>
+              <footer class="footer-portfolio-block">
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
                     <a class="icons-portfolio icon-ti-link" href="#"></a>
@@ -237,7 +273,7 @@
             <div class="portfolio-block-inner">
               <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
               <p class="description-portfolio-block">Art, Photography, City</p>
-              <footer>
+              <footer class="footer-portfolio-block">
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
                     <a class="icons-portfolio icon-ti-link" href="#"></a>
@@ -253,7 +289,7 @@
             <div class="portfolio-block-inner">
               <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
               <p class="description-portfolio-block">Art, Photography, City</p>
-              <footer>
+              <footer class="footer-portfolio-block">
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
                     <a class="icons-portfolio icon-ti-link" href="#"></a>
@@ -269,7 +305,7 @@
             <div class="portfolio-block-inner">
               <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
               <p class="description-portfolio-block">Art, Photography, City</p>
-              <footer>
+              <footer class="footer-portfolio-block">
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
                     <a class="icons-portfolio icon-ti-link" href="#"></a>
@@ -285,7 +321,7 @@
             <div class="portfolio-block-inner">
               <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
               <p class="description-portfolio-block">Art, Photography, City</p>
-              <footer>
+              <footer class="footer-portfolio-block">
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
                     <a class="icons-portfolio icon-ti-link" href="#"></a>
@@ -301,7 +337,7 @@
             <div class="portfolio-block-inner">
               <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
               <p class="description-portfolio-block">Art, Photography, City</p>
-              <footer>
+              <footer class="footer-portfolio-block">
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
                     <a class="icons-portfolio icon-ti-link" href="#"></a>
@@ -317,7 +353,7 @@
             <div class="portfolio-block-inner">
               <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
               <p class="description-portfolio-block">Art, Photography, City</p>
-              <footer>
+              <footer class="footer-portfolio-block">
                 <ul class="list-icons-portfolio-block">
                   <li class="list-portfolio-block-item">
                     <a class="icons-portfolio icon-ti-link" href="#"></a>
@@ -401,6 +437,9 @@
                     tabindex="4"
                   ></textarea>
                 </div>
+                <div class="form-group">
+                  <button class="btn btn-light visible-medium" type="submit">Send</button>
+                </div>
               </form>
             </div>
           </div>
@@ -440,7 +479,7 @@
           <img src="./assets/img/logo.png" alt="logo" />
           Expire
         </a>
-        <p class="copyrights">© Copyright 2014, design by dingo_design</p>
+        <p class="copyrights">&copy; Copyright 2014, design by dingo_design</p>
         <a href="#" class="footer-anchor"></a>
       </div>
     </footer>

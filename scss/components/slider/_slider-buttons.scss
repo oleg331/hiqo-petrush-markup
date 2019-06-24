@@ -4,6 +4,22 @@
 
     .btn-slider-buttons {
         float: left;
-        margin-right: 20px;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+@include screen-large {
+    .slider-buttons {
+        font-size: 0;
+
+        .btn-slider-buttons, 
+        .btn-slider-buttons:not(:last-child){
+            float: none;
+            margin: 10px 10px 0;
+
+        }
     }
 }

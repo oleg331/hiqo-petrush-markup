@@ -10,7 +10,7 @@
         transition: .2s opacity;
 
         &:hover {
-            opacity: 0.6;
+            opacity: .6;
         }
 
         &.slider-arrow-left {
@@ -21,6 +21,20 @@
         &.slider-arrow-right {
             transform: rotate(180deg);
             right: -93px;
+        }
+    }
+}
+
+@include screen-large {
+    .slider-arrows {
+        .slider-arrow {
+            &.slider-arrow-left {
+                left: -33px;
+            }
+
+            &.slider-arrow-right {
+                right: -33px;
+            }
         }
     }
 }

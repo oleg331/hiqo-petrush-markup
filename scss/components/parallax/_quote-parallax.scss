@@ -1,11 +1,13 @@
 .quote-parallax {
-    max-width: 893px;
+    max-width: $width-quote-parallax;
     margin: 0 auto;
     padding-left: 31px;
 
     blockquote {
         position: relative;
         margin-bottom: 40px;
+        letter-spacing: .35px;
+        @include font($font-size-block-quote, $secondary-light-italic);
 
         &:before {
             content: '';
@@ -15,6 +17,54 @@
             width: 51px;
             height: 40px;
             background: url(../../assets/img/icon-quote.png) 0 0 no-repeat;
+
+            @include screen-medium {
+                left: -10px;
+                top: -10px;
+            }
+        }
+    }
+
+    .author-quote-parallax {
+        @include font($font-size-author-quote, $secondary-light);
+    }
+}
+
+@include screen-large {
+    .quote-parallax {
+        padding-left: 0;
+        max-width: $width-quote-parallax-large;
+
+        blockquote {
+            font-size: $font-size-block-quote-large;
+        }
+
+        .author-quote-parallax {
+            font-size: $font-size-author-quote-large;
+        }
+    }
+}
+
+@include screen-medium {
+    .quote-parallax {
+        blockquote {
+            font-size: $font-size-block-quote-medium;
+        }
+
+        .author-quote-parallax {
+            font-size: $font-size-author-quote-medium;
+        }
+    }
+}
+
+@include screen-medium {
+    .quote-parallax {
+        blockquote {
+            font-size: $font-size-block-quote-small;
+        }
+
+        .author-quote-parallax {
+            font-size: $font-size-author-quote-small;
         }
     }
 }

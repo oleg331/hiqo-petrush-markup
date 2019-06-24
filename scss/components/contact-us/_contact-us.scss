@@ -1,20 +1,42 @@
 .contact-us {
 
     .container {
-        padding: 141px 0 65px;
+        padding: 141px 0 43px;
 
-        .head-section {
-            margin-bottom: 56px;
-            text-align: left;
+        @include screen-x-large {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @include screen-large {
+            padding-top: 60px;
+        }
+    }
+
+    .head-section {
+        margin-bottom: 56px;
+        text-align: left;
+
+        .head-secondary:after,
+        .head-description {
+            margin: 0;
+        }
+
+        @include screen-x-large {
+            text-align: center;
 
             .head-secondary:after,
             .head-description {
-                margin: 0;
+                margin: 0 auto;
             }
         }
+    }
 
-        .contact-content {
-            display: flex;
+    .contact-content {
+        display: flex;
+
+        @include screen-large {
+            flex-flow: column wrap;
         }
     }
 }

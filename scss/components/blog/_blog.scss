@@ -3,11 +3,26 @@
     padding-bottom: 128px;
     position: relative;
 
+    @include screen-medium {
+        padding-bottom: 50px;
+    }
+
+
     .container {
         padding-top: 91px;
     }
 
     .head-section {
         margin-bottom: 92px;
+    }
+
+    @include screen-large {
+        .container {
+            padding-top: 50px;
+        }
+
+        .head-section {
+            margin-bottom: 40px;
+        }
     }
 }

@@ -1,6 +1,6 @@
 .btn {
-    min-width: 148px;
-    height: 48px;
+    min-width: $width-btn;
+    height: $height-btn;
     display: inline-block;
     color: $color-btn;
     text-align: center;
@@ -26,5 +26,12 @@
             background: $border-btn-dark-active;
             color: $color-btn;
         }
+    }
+}
+
+@include screen-small {
+    .btn {
+        min-width: $width-btn-small;
+        height: $height-btn-small;
     }
 }

@@ -5,33 +5,15 @@
     padding: 0 29px;
     box-sizing: border-box;
 
-    .contact-list-item {
+    @include clearfix;
+
+    &-item {
         display: flex;
         align-items: center;
         margin-bottom: 66px;
         color: $color-contact-list-item;
-
-        .icons-contact {
-            display: inline-block;
-            background: url(../../assets/img/icons-contact.png) 0 0 no-repeat;
-            width: 29px;
-            margin-right: 58px;
-
-            &.icon-location {
-                height: 35px;
-                background-position: 0 0;
-            }
-
-            &.icon-mail {
-                height: 19px;
-                background-position: 0 -35px;
-            }
-
-            &.icon-phone {
-                height: 36px;
-                background-position: 0 -54px;
-            }
-        }
+        @include font(14px, $secondary-regular);
+        line-height: 24px;
 
         .icon-location+.content-list-item {
             flex: 0 0 140px;
@@ -39,6 +21,77 @@
 
         .icon-phone+.content-list-item {
             flex: 0 0 170px;
+        }
+    }
+
+    .icons-contact {
+        display: inline-block;
+        background: url(../../assets/img/icons-contact.png) 0 0 no-repeat;
+        width: 29px;
+        margin-right: 58px;
+
+        &.icon-location {
+            height: 35px;
+            background-position: 0 0;
+        }
+
+        &.icon-mail {
+            height: 19px;
+            background-position: 0 -35px;
+        }
+
+        &.icon-phone {
+            height: 36px;
+            background-position: 0 -54px;
+        }
+    }
+}
+
+@include screen-large {
+    .contact-list {
+        flex: 0;
+        margin-bottom: 30px;
+
+        &-items {
+            display: flex;
+            align-items: center;
+        }
+    
+        &-item {
+            float: left;
+            width: calc(100% / 3);
+            margin-bottom: 0;
+            box-sizing: border-box;
+            padding: 0 10px;
+            align-items: center;
+            flex-flow: column wrap;
+            text-align: center;
+    
+            .icons-contact {
+                margin: 0 0 10px;
+            }
+
+            .icon-location+.content-list-item,
+            .icon-phone+.content-list-item {
+                flex: 0;
+            }
+        }
+    }
+}
+
+@include screen-medium {
+    .contact-list {
+        &-items {
+            flex-flow: column;
+        }
+
+        &-item {
+            float: none;
+            width: inherit;
+
+            &:not(:last-child) {
+                padding-bottom: 20px;
+            }
         }
     }
 }
