@@ -5,7 +5,7 @@ body {
 a {
     color: $color-link-base;
     text-decoration: none;
-    transition: 0.2s color;
+    transition: .2s color;
 
     &:hover {
         color: $color-link-base-active;
@@ -15,7 +15,7 @@ a {
 .head-primary {
     position: relative;
     color: $color-header-base;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
     padding-bottom: 31px;
     margin-bottom: 26px;
     @include font(70px, $primary-semibold);

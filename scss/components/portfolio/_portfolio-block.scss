@@ -18,7 +18,7 @@
 
     .portfolio-block-inner {
         @include font-family($secondary-semibold);
-        transition: 0.2s opacity;
+        transition: .2s opacity;
         width: $width-portfolio-block-inner;
         height: $height-portfolio-block-inner;
         box-sizing: border-box;

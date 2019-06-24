@@ -6,7 +6,7 @@
     blockquote {
         position: relative;
         margin-bottom: 40px;
-        letter-spacing: 0.35px;
+        letter-spacing: .35px;
         @include font($font-size-block-quote, $secondary-light-italic);
 
         &:before {

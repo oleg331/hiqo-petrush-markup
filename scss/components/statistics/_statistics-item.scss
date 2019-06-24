@@ -40,7 +40,7 @@
         }
 
         .text-statistics-item {
-            letter-spacing: -0.1px;
+            letter-spacing: -.1px;
             @include font($font-size-text-statistics, $primary-light);
         }
     }
