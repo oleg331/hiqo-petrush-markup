@@ -36,6 +36,11 @@
         @include screen-medium {
             grid-template-columns: repeat(1, minmax(auto, auto));
             grid-template-rows: repeat(8, 240px);
+            grip-gap: 5px;
+        }
+
+        @include screen-small {
+            grid-gap: 10px;
         }
     }
 }

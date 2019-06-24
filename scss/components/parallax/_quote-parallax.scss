@@ -17,6 +17,11 @@
             width: 51px;
             height: 40px;
             background: url(../../assets/img/icon-quote.png) 0 0 no-repeat;
+
+            @include screen-medium {
+                left: -10px;
+                top: -10px;
+            }
         }
     }
 

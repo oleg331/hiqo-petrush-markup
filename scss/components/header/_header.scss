@@ -14,6 +14,30 @@
         
         .header-top {
             margin-bottom: 50px;
+
+            .container {
+                box-sizing: border-box;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@include screen-medium {
+    .header {
+
+        .header-top {
+            margin-bottom: 20px;
+        }
+
+        .container{
+            width: 100%;
+
+            @include clearfix;
+
+            .navigation {
+                float: left;
+            }
         }
     }
 }

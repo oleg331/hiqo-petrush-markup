@@ -46,3 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+// disable shadows and border-radius in form elements for safari browser
+input, textarea {
+    border-radius: 0;
+    -webkit-appearance: none;
+}

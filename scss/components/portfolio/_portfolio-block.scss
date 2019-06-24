@@ -39,6 +39,10 @@
             font-size: 15px;
             letter-spacing: .5px;
         }
+
+        @include screen-medium {
+            opacity: 1;
+        }
     }
 
     footer {
