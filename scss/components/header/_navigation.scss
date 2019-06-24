@@ -10,7 +10,7 @@
     color: $color-header-base;
     margin: 0 28px;
 
-    a {
+    .link-navigation-item {
         position: relative;
         text-decoration: none;
         color: $color-header-base;
@@ -37,7 +37,7 @@
     &.active,
     &:hover {
 
-        a {
+        .link-navigation-item {
             &:not(.logo) {
                 &:after {
                     width: $width-line-navigation-item-active;
@@ -140,7 +140,7 @@
             .navigation-item {
                 margin: 0;
 
-                a {
+                .link-navigation-item {
                     padding: 0;
                 }
             }
@@ -148,8 +148,6 @@
     }
 
     .burger-menu {
-        float: right;
-        margin-top: 10px;
 
         .burger {
             position: relative;
@@ -195,7 +193,6 @@
     }
 
     .burger-dropdown {
-        display: block;
         position: fixed;
         right: 0;
         top: 0;

@@ -9,7 +9,7 @@
             display: inline-block;
             border: 1px solid $border-block-post;
             box-sizing: border-box;
-            width: calc(100% / #{$count-block-post-visible} - #{$gap-block-post});
+            width: calc(100% / #{$count-block-post-visible} - #{$gap-block-post} / 1.5);
             height: 100%;
             vertical-align: top;
 
@@ -63,12 +63,13 @@
         float: left;
         margin-bottom: 10px;
 
+        @include clearfix;
+
         &:not(:last-child) {
             margin-right: 14px;
         }
 
         .icons-blog {
-            display: inline-block;
             float: left;
             background: url(../../assets/img/icons-blog.png) 0 0 no-repeat;
             width: 15px;
