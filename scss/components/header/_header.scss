@@ -6,13 +6,8 @@
         display: flex;
         justify-content: center;
         margin-bottom: 172px;
-    }
-}
 
-@include screen-large {
-    .header{
-        
-        .header-top {
+        @include screen-large {
             margin-bottom: 50px;
 
             .container {
@@ -20,16 +15,13 @@
                 padding: 0;
             }
         }
-    }
-}
 
-@include screen-medium {
-    .header {
-
-        .header-top {
+        @include screen-large {
             margin-bottom: 20px;
         }
+    }
 
+    @include screen-medium {
         .container{
             width: 100%;
 
