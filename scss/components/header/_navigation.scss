@@ -115,16 +115,18 @@
         justify-content: center;
         height: inherit;
         padding: 30px 0;
-    }
 
-    .navigation-item-logo {
-        order: -1;
-
-        a.logo {
-            margin: 0 10px 0 0;
-
-            img {
-                margin-bottom: 0;
+        &-item-logo {
+            order: -1;
+    
+            .link-navigation-item {
+                &.logo {
+                    margin: 0 10px 0 0;
+        
+                    img {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }
