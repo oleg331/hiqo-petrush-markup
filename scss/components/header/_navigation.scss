@@ -57,11 +57,27 @@
     .burger-shower {
         display: none;
     }
+
+    .label-icon-burger {
+        &:before {
+            content: '';
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            width: 0;
+            opacity: 0;
+            background: rgba(0, 0, 0, .6);
+            transform: 0.2s opacity;
+        }
+    }
 }
 
 .icon-burger {
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     right: 0;
     top: 0;
     cursor: pointer;
@@ -175,6 +191,11 @@
             &+.label-icon-burger {
                 transform: rotate(45deg);
 
+                &:before {
+                    opacity: 1;
+                    width: 100%;
+                }
+
                 .icon-burger {
                     transform: rotate(45deg);
 
@@ -200,7 +221,7 @@
         top: 0;
         bottom: 0;
         background: #33353a;
-        z-index: 1;
+        z-index: 3;
         width: 300px;
         padding: 50px 10px;
         box-sizing: border-box;
