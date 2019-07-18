@@ -1,4 +1,6 @@
 .slider-post {
+    position: relative;
+    padding-bottom: 80px;
 
     .slider-slide {
         overflow: hidden;
@@ -149,6 +151,10 @@
             .block-post {
                 width: calc(100% / #{$count-block-post-visible-medium});
                 margin-bottom: 20px;
+
+                &.hidden-medium {
+                    display: none;
+                }
             }
         }
     }
