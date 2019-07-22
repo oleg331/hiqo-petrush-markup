@@ -23,6 +23,23 @@
             right: 27px;
         }
     }
+
+    &-blog {
+        .slider-arrow {
+            background: url(../assets/img/arrow-slider-blog.png) 0 0 no-repeat;
+            width: 25px;
+            height: 42px;
+            top: 36%;
+
+            &.slider-arrow-left {
+                left: -85px;
+            }
+    
+            &.slider-arrow-right {
+                right: -85px;
+            }
+        }
+    }
 }
 
 @include screen-large {

@@ -3,17 +3,22 @@
     padding-bottom: 80px;
 
     .slider-slide {
-        overflow: hidden;
-        font-size: 0;
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        background-size: 100% auto;
+        background-attachment: fixed;
+        background-position: center center;
         height: $height-slider-slide;
 
         .block-post {
-            display: inline-block;
+            display: block;
             border: 1px solid $border-block-post;
             box-sizing: border-box;
-            width: calc(100% / #{$count-block-post-visible} - #{$gap-block-post} / 1.5);
+            width: calc(100% - #{$gap-block-post} / 1.5);
+            // width: calc(100% / #{$count-block-post-visible} - #{$gap-block-post} / 1.5);
             height: 100%;
-            vertical-align: top;
+            margin: 0 auto;
 
             &:not(:last-child) {
                 margin-right: $gap-block-post;
@@ -118,7 +123,7 @@
             height: $height-slider-slide-large;
     
             .block-post {
-                width: calc(100% / #{$count-block-post-visible-large} - #{$gap-block-post});
+                // width: calc(100% / #{$count-block-post-visible-large} - #{$gap-block-post});
             }
         }
     }
@@ -149,7 +154,7 @@
             height: inherit;
 
             .block-post {
-                width: calc(100% / #{$count-block-post-visible-medium});
+                // width: calc(100% / #{$count-block-post-visible-medium});
                 margin-bottom: 20px;
 
                 &.hidden-medium {

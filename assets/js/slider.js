@@ -25,15 +25,27 @@ const Slider = (function () {
 
   const slider = function (settings) {
 
-    this.state = {
-      target: settings.target,
-      dotsContainer: settings.dotsContainer,
-      arrowLeft: settings.arrowLeft,
-      arrowRight: settings.arrowRight,
-      transition: settings.transition,
-      swipe: true,
-      autoHeight: true
+    // this.breakpoints = {
+    //   xLarge: 1200,
+    //   large: 992,
+    //   medium: 768,
+    //   small: 675
+    // }
+
+    const defaultState = {
+      transition: { speed: 200, easing: 'ease' },
+      showSlides: 3,
+      swipe: false,
+      autoHeight: false
     }
+
+    this.state = settings;
+
+    Object.keys(defaultState).forEach(key => {
+      if(!this.state[key]) {
+        this.state[key] = defaultState[key];
+      }
+    })
 
     this.init();
   }
@@ -90,7 +102,7 @@ const Slider = (function () {
       return onresize;
     }
 
-    window.addEventListener("resize", on_resize(() => {
+    window.addEventListener("resize", on_resize(() => {      
       self.updateSliderDimension();
     }), false);
 
@@ -118,7 +130,7 @@ const Slider = (function () {
 
     this.sliderInner.style.width = (this.totalSlides + 2) * 100 + "%";
     for (let i = 0; i < self.totalSlides + 2; i++) {
-      this.allSlides[i].style.width = 100 / (this.totalSlides + 2) + "%";
+      this.allSlides[i].style.width = (100 / (this.totalSlides + 2)) / this.state.showSlides + "%";
       this.updateSliderDimension();
     }
 
@@ -269,15 +281,75 @@ const Slider = (function () {
         }
       }
     }
+
+    const breakpoints = this.state.breakpoints;
+
+    if (breakpoints) {
+      
+      let breakpointsNames = [];
+  
+      Object.keys(breakpoints).sort().forEach(key => {
+        breakpointsNames.push(+key);
+      });
+  
+      let updateDimensionForBreakpoints = false;
+  
+      const minBreakpoint = breakpointsNames[breakpointsNames.length - 1]
+  
+      if (breakpointsNames[0] > document.body.offsetWidth) {
+        updateDimensionForBreakpoints = true;
+      }
+  
+      if (breakpoints && updateDimensionForBreakpoints) {
+        Object.keys(this.state.breakpoints).forEach((key, index) => {
+          if (document.body.offsetWidth > breakpointsNames[0]){
+            this.state.showSlides = this.state.defaultSlides;
+          } else if (document.body.offsetWidth < breakpointsNames[breakpointsNames.length - 1]) {
+            this.state.showSlides = breakpoints[minBreakpoint].showSlides;
+          } else if (document.body.offsetWidth < key) {
+            this.state.showSlides = this.state.breakpoints[key].showSlides;
+          }
+        })
+  
+        for (let i = 0; i < this.totalSlides + 2; i++) {
+          this.allSlides[i].style.width = (100 / (this.totalSlides + 2)) / this.state.showSlides + "%";
+        }
+      }
+    }
   }
 
   return slider;
 })();
 
-const slider = new Slider({
+const sliderHeader = new Slider({
   target: $('.slider-header .slider-container'),
-  dotsContainer: $('.slider-dots'),
-  arrowLeft: $('.slider-arrow-left'),
-  arrowRight: $('.slider-arrow-right'),
-  transition: { speed: 350, easing: 'ease' }
+  dotsContainer: $('.slider-header .slider-dots'),
+  arrowLeft: $('.slider-header .slider-arrow-left'),
+  arrowRight: $('.slider-header .slider-arrow-right'),
+  transition: { speed: 350, easing: 'ease' },
+  swipe: true,
+  autoHeight: true,
+  showSlides: 1
+});
+
+const sliderPost = new Slider({
+  target: $('.slider-post .slider-container'),
+  dotsContainer: $('.slider-post .slider-dots'),
+  arrowLeft: $('.slider-post .slider-arrow-left'),
+  arrowRight: $('.slider-post .slider-arrow-right'),
+  transition: { speed: 350, easing: 'ease' },
+  swipe: true,
+  autoHeight: true,
+  defaultSlides: 3,
+  showSlides: 3,
+
+  // for showSlides only
+  breakpoints: {
+    1200: {
+      showSlides: 2,
+    },
+    675: {
+      showSlides: 1
+    }
+  }
 });
