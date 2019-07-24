@@ -357,6 +357,27 @@
     </div>
   </footer>
 
+  <script id="some-template" type="text/x-handlebars-template">
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Job Title</th>
+        <th>Twitter</th>
+      </thead>
+      <tbody>
+        {{#users}}
+        <tr>
+          <td>{{fullName person}}</td>
+          <td>{{jobTitle}}</td>
+          <td><a href="https://twitter.com/{{twitter}}">@{{twitter}}</a></td>
+        </tr>
+        {{/users}}
+      </tbody>
+    </table>
+  </script>
+
+  <div id="test"></div>
+
   <!-- scripts -->
   <script src="http://www.fsfoo.com/js/vendor/handlebars-1.0.rc.2.js" type="text/javascript"></script>
   <script src="assets/js/handleResponse.js" type="text/javascript"></script>
