@@ -1,0 +1,30 @@
+{
+  "name": "navigation",
+  "itemClass": "link-navigation-item",
+  "list": [
+    {
+      "text": "Home",
+      "url": "index.html"
+    },
+    {
+      "text": "Portfolio",
+      "url": "#portfolio"
+    },
+    {
+      "text": "Blog",
+      "url": "#blog"
+    },
+    {
+      "text": "Pages",
+      "url": "#"
+    },
+    {
+      "text": "About us",
+      "url": "#contact-us"
+    },
+    {
+      "text": "Contact",
+      "url": "#contact-us"
+    }
+  ]
+}
