@@ -34,3 +34,49 @@ const sliderPost = new Slider({
     }
   }
 });
+
+// Fetch data
+
+function getDataFromJSON(dataUrl) {
+  
+}
+
+// Handlebars
+
+function generateTemplate(template) {
+  fetch(template.dataUrl)
+    .then(handleResponse)
+    .then(data => {
+      const templateSource = document.querySelector(template.id).innerHTML;
+      const compileTemplate = Handlebars.compile(templateSource);
+
+      var nav = document.querySelector(template.element);
+      nav.innerHTML = compileTemplate(data);
+    });
+}
+
+// navigation general
+
+generateTemplate({
+  id: '#navigation-general', 
+  element: '.navigation-general', 
+  dataUrl: '../../data/list-navigation.json'
+});
+
+Handlebars.registerHelper('link', function(className, object) {
+  const url = object.url;
+  const text = object.text;
+
+  return new Handlebars.SafeString(
+    '<a class="' + className + '" href="' + url + '">' + text + '</a>'
+  );
+});
+
+//  statistics
+
+generateTemplate({
+  id: '#list-statistics', 
+  element: '.list-statistics', 
+  dataUrl: '../../data/list-statistics.json'
+})
+
