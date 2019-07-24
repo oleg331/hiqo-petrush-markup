@@ -1,0 +1,33 @@
+{
+  "name": "slider-blog",
+  "slides": [
+    {
+      "title": "Just Another Blog Post",
+      "author": "By Author",
+      "date": "9 November 2014",
+      "countComments": "3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?"
+    },
+    {
+      "title": "Blog Post With Youtube video",
+      "author": "By Author",
+      "date": "24 Devember 2014",
+      "countComments": "1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio."
+    },
+    {
+      "title": "This Could be Great",
+      "author": "By Author",
+      "date": "10 June 2014",
+      "countComments": "0",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?"
+    },
+    {
+      "title": "Blog Post With Youtube video",
+      "author": "By Author",
+      "date": "24 Devember 2014",
+      "countComments": "1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio."
+    }
+  ]
+}

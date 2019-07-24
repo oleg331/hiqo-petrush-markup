@@ -1,0 +1,21 @@
+{
+  "name": "slider-header",
+  "slides": [
+    {
+      "title": "Expire1",
+      "description": "Professionaly designed, carefully made for your enjoyement"
+    },
+    {
+      "title": "Expire2",
+      "description": "Professionaly designed, carefully made for your enjoyement"
+    },
+    {
+      "title": "Expire3",
+      "description": "Professionaly designed, carefully made for your enjoyement"
+    },
+    {
+      "title": "Expire4",
+      "description": "Professionaly designed, carefully made for your enjoyement"
+    }
+  ]
+}

@@ -1,8 +1,13 @@
 .slider-header {
 
     .slider-slide {
-        padding-bottom: 195px;
         position: relative;
+        float: left;
+        box-sizing: border-box;
+        background-size: 100% auto;
+        background-attachment: fixed;
+        background-position: center center;
+        padding-bottom: 195px;
 
         .title-slider-slide {
             &:after {

@@ -1,6 +1,6 @@
 .blog {
     background: $color-posts-bg;
-    padding-bottom: 128px;
+    padding-bottom: 48px;
     position: relative;
 
     @include screen-medium {
@@ -9,7 +9,7 @@
 
 
     .container {
-        padding-top: 91px;
+        padding: 91px 105px;
     }
 
     .head-section {
@@ -19,10 +19,19 @@
     @include screen-large {
         .container {
             padding-top: 50px;
+            padding-left: 45px;
+            padding-right: 45px;
         }
 
         .head-section {
             margin-bottom: 40px;
+        }
+    }
+
+    @include screen-medium {
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }

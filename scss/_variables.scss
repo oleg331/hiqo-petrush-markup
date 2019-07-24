@@ -10,7 +10,6 @@ $color-link-base-active: #ff3c1f;
 $width-container: 1170px;
 
 // fonts
-
 $primary-light: 'Raleway-Light';
 $primary-regular: 'Raleway-Regular';
 $primary-semibold: 'Raleway-SemiBold';
@@ -66,9 +65,13 @@ $height-footer-portfolio-block: 74px;
 // slider
 $color-border-slider-dot: #fff;
 $color-border-slider-dot-active: #abb3c0;
+$color-border-slider-dot-dark: #ff3c1f;
+$color-border-slider-dot-dark-active: #ff3c1f;
 $bg-slider-dot-active: #fff;
+$bg-slider-dot-dark-active: #ff3c1f;
 $width-description-slide: 950px;
 $height-slider-slide: 610px;
+$duration-loader: .5s;
 
 // paralax
 $color-parallax-bg: #f14a37;
@@ -170,6 +173,9 @@ $font-size-text-statistics-medium: 24px;
 $line-height-count-statistics-medium: inherit;
 $width-statistics-item-medium: 40%;
 
+// blog
+$count-block-post-visible-medium: 1;
+
 // ----- screen-small -----
 
 // form
@@ -192,6 +198,3 @@ $font-size-author-quote-small: 20px;
 
 // statistics
 $width-statistics-item-small: 100%;
-
-// blog
-$count-block-post-visible-medium: 1;
