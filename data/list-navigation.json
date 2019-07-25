@@ -1,0 +1,41 @@
+{
+  "name": "navigation",
+  "list": [
+    {
+      "text": "Home",
+      "url": "index.html",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
+    },
+    {
+      "text": "Portfolio",
+      "url": "#portfolio",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
+    },
+    {
+      "text": "Blog",
+      "url": "#blog",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
+    },
+    {
+      "text": "Pages",
+      "url": "#",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
+    },
+    {
+      "text": "About us",
+      "url": "#contact-us",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
+    },
+    {
+      "text": "Contact",
+      "url": "#contact-us",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
+    }
+  ]
+}

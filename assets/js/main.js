@@ -34,3 +34,76 @@ const sliderPost = new Slider({
     }
   }
 });
+
+// Handlebars
+
+const dataUrl = {
+  navigation: '../../data/list-navigation.json',
+  statistics: '../../data/list-statistics.json',
+  portfolio: '../../data/list-portfolio.json'
+}
+
+function insertAfter(elem, refNode) {
+  refNode.parentNode.insertBefore(elem, refNode.nextSibling);
+}
+
+function generateTemplate(template) {
+  const { templateId, element, dataUrl, showItems } = template;
+  if (element == '.list-portfolio' && !!eachLimitStatus) eachLimitStatus = true;
+
+  fetch(dataUrl)
+    .then(handleResponse)
+    .then(data => {
+      const templateSource = document.querySelector(templateId).innerHTML;
+      const compileTemplate = Handlebars.compile(templateSource);
+      const elem = document.querySelector(element);
+
+      elem.innerHTML = compileTemplate(data);
+
+      if (showItems !== undefined) {
+        const buttonShowMore = document.querySelector('.show-more-portfolio-block');
+        let showMoreTemplate = template;
+
+        buttonShowMore.onclick = (event) => {
+          const target = event.target;
+
+          buttonShowMore.parentNode.removeChild(buttonShowMore);
+          delete showMoreTemplate.showItems;
+
+          generateTemplate(showMoreTemplate);
+        }
+      }
+    });
+}
+
+// navigation general
+generateTemplate({
+  templateId: '#navigation-general', 
+  element: '.navigation-general', 
+  dataUrl: dataUrl.navigation
+});
+
+// navigation burger
+generateTemplate({
+  templateId: '#navigation-burger', 
+  element: '.navigation-burger', 
+  dataUrl: dataUrl.navigation
+});
+
+// statistics
+generateTemplate({
+  templateId: '#list-statistics', 
+  element: '.list-statistics', 
+  dataUrl: dataUrl.statistics
+})
+
+// portfolio
+generateTemplate({
+  templateId: '#list-portfolio', 
+  element: '.list-portfolio', 
+  dataUrl: dataUrl.portfolio,
+  showItems: {
+    count: 4,
+    buttonShowMore: '.show-more-portfolio-block button'
+  }
+})

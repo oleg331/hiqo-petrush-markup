@@ -1,0 +1,25 @@
+{
+  "name": "statistics",
+  "list": [
+    {
+      "title" : "icons-statistic icon-user",
+      "count": "1000+",
+      "text": "Happy users"
+    },
+    {
+      "icon" : "icons-statistic icon-user",
+      "count": "200",
+      "text": "Sold products"
+    },
+    {
+      "icon" : "icons-statistic icon-user",
+      "count": "5632",
+      "text": "Comments"
+    },
+    {
+      "icon" : "icons-statistic icon-user",
+      "count": "25000+",
+      "text": "Lines of code"
+    }
+  ]
+}

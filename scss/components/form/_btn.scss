@@ -7,6 +7,7 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: .2s;
+    cursor: pointer;
 
     &.btn-dark {
         border: 1px solid $border-btn-dark;

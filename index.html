@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main page</title>
-
-
   
-<link rel="stylesheet" href="/assets/style.css" /></head>
+  
+  <title>Main page</title>
+<link rel="stylesheet" href="/assets/style.css" /><link rel="stylesheet" href="/assets/style.css" /></head>
 
 <body>
   <div class="wrapper">
@@ -17,32 +16,10 @@
       <nav class="header-top">
         <div class="container">
           <!-- navigation desktop -->
-          <ul class="navigation">
-            <li class="navigation-item hidden-medium active">
-              <a class="link-navigation-item" href="index.html">Home</a>
-            </li>
-            <li class="navigation-item hidden-medium">
-              <a class="link-navigation-item" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="navigation-item hidden-medium">
-              <a class="link-navigation-item" href="#blog">Blog</a>
-            </li>
-            <li class="navigation-item navigation-item-logo">
-              <a class="link-navigation-item logo" href="index.html">
-                <img src="./assets/img/logo.png" alt="logo" />
-                <span class="text-logo hidden-large">Expire</span>
-              </a>
-            </li>
-            <li class="navigation-item hidden-medium">
-              <a class="link-navigation-item" href="#">Pages</a>
-            </li>
-            <li class="navigation-item hidden-medium">
-              <a class="link-navigation-item" href="#contact-us">About us</a>
-            </li>
-            <li class="navigation-item hidden-medium">
-              <a class="link-navigation-item" href="#contact-us">Contact</a>
-            </li>
-          </ul>
+            <ul class="navigation navigation-general"></ul>
+            <script id="navigation-general" type="text/x-handlebars-template">
+              {{#each list}} {{NavLink "general" this @index}} {{/each}}
+            </script>
           <!-- burder mobile -->
           <div class="burger-menu visible-medium">
             <input type="checkbox" id="burger-shower" class="burger-shower">
@@ -56,14 +33,10 @@
               </svg>
             </label>
             <nav class="burger-dropdown">
-              <ul class="navigation navigation-burger">
-                <li class="navigation-item active"><a class="link-navigation-item" href="index.html">Home</a></li>
-                <li class="navigation-item"><a class="link-navigation-item" href="#portfolio">Portfolio</a></li>
-                <li class="navigation-item"><a class="link-navigation-item" href="#blog">Blog</a></li>
-                <li class="navigation-item"><a class="link-navigation-item" href="#">Pages</a></li>
-                <li class="navigation-item"><a class="link-navigation-item" href="#contact-us">About us</a></li>
-                <li class="navigation-item"><a class="link-navigation-item" href="#contact-us">Contact</a></li>
-              </ul>
+              <ul class="navigation navigation-burger"></ul>
+              <script id="navigation-burger" type="text/x-handlebars-template">
+                {{#each list}} {{NavLink "burger" this @index}} {{/each}}
+              </script>
             </nav>
           </div>
         </div>
@@ -162,135 +135,30 @@
       <div class="head-section head-dark">
         <h3 class="head-secondary head-title">Latest portfolio</h3>
       </div>
-      <div class="list-portfolio">
-        <div class="portfolio-block">
-          <div class="portfolio-block-inner">
-            <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
-            <p class="description-portfolio-block">Art, Photography, City</p>
-            <footer class="footer-portfolio-block">
-              <ul class="list-icons-portfolio-block">
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-ti-link" href="#"></a>
-                </li>
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                </li>
-              </ul>
-            </footer>
+      <script id="list-portfolio" type="text/x-handlebars-template">
+        {{#eachLimit list 4}}
+          <div class="portfolio-block">
+            <div class="portfolio-block-inner">
+              <h5 class="head-extra-secondary title-portoflio-block">{{title}}</h5>
+              <p class="description-portfolio-block">{{description}}</p>
+              <footer class="footer-portfolio-block">
+                <ul class="list-icons-portfolio-block">
+                  <li class="list-portfolio-block-item">
+                    <a class="icons-portfolio icon-ti-link" href="#"></a>
+                  </li>
+                  <li class="list-portfolio-block-item">
+                    <a class="icons-portfolio icon-zoom-in" href="#"></a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
           </div>
-        </div>
-        <div class="portfolio-block">
-          <div class="portfolio-block-inner">
-            <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
-            <p class="description-portfolio-block">Art, Photography, City</p>
-            <footer class="footer-portfolio-block">
-              <ul class="list-icons-portfolio-block">
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-ti-link" href="#"></a>
-                </li>
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                </li>
-              </ul>
-            </footer>
-          </div>
-        </div>
-        <div class="portfolio-block">
-          <div class="portfolio-block-inner">
-            <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
-            <p class="description-portfolio-block">Art, Photography, City</p>
-            <footer class="footer-portfolio-block">
-              <ul class="list-icons-portfolio-block">
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-ti-link" href="#"></a>
-                </li>
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                </li>
-              </ul>
-            </footer>
-          </div>
-        </div>
-        <div class="portfolio-block">
-          <div class="portfolio-block-inner">
-            <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
-            <p class="description-portfolio-block">Art, Photography, City</p>
-            <footer class="footer-portfolio-block">
-              <ul class="list-icons-portfolio-block">
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-ti-link" href="#"></a>
-                </li>
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                </li>
-              </ul>
-            </footer>
-          </div>
-        </div>
-        <div class="portfolio-block">
-          <div class="portfolio-block-inner">
-            <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
-            <p class="description-portfolio-block">Art, Photography, City</p>
-            <footer class="footer-portfolio-block">
-              <ul class="list-icons-portfolio-block">
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-ti-link" href="#"></a>
-                </li>
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                </li>
-              </ul>
-            </footer>
-          </div>
-        </div>
-        <div class="portfolio-block">
-          <div class="portfolio-block-inner">
-            <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
-            <p class="description-portfolio-block">Art, Photography, City</p>
-            <footer class="footer-portfolio-block">
-              <ul class="list-icons-portfolio-block">
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-ti-link" href="#"></a>
-                </li>
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                </li>
-              </ul>
-            </footer>
-          </div>
-        </div>
-        <div class="portfolio-block">
-          <div class="portfolio-block-inner">
-            <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
-            <p class="description-portfolio-block">Art, Photography, City</p>
-            <footer class="footer-portfolio-block">
-              <ul class="list-icons-portfolio-block">
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-ti-link" href="#"></a>
-                </li>
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                </li>
-              </ul>
-            </footer>
-          </div>
-        </div>
-        <div class="portfolio-block">
-          <div class="portfolio-block-inner">
-            <h5 class="head-extra-secondary title-portoflio-block">Big city</h5>
-            <p class="description-portfolio-block">Art, Photography, City</p>
-            <footer class="footer-portfolio-block">
-              <ul class="list-icons-portfolio-block">
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-ti-link" href="#"></a>
-                </li>
-                <li class="list-portfolio-block-item">
-                  <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                </li>
-              </ul>
-            </footer>
-          </div>
-        </div>
+        {{/eachLimit}}
+      </script>
+      <div class="list-portfolio"></div>
+      <div class="show-more-portfolio-block">
+        <button class="btn btn-light">Show more</button>
+        <i class="loader"></i>
       </div>
     </section>
     <section class="contact-us" id="contact-us">
@@ -386,6 +254,11 @@
   </footer>
 
   <!-- scripts -->
+
+  <!-- handlebars -->
+  <script src="./assets/js/handlebars/handlebars-1.0.rc.2.js" type="text/javascript"></script>
+  <script src="./assets/js/handlebars/helpers.js" type="text/javascript"></script>
+
   <script src="assets/js/handleResponse.js" type="text/javascript"></script>
   <script src="assets/js/slider.js" type="text/javascript"></script>
   <script src="assets/js/main.js" type="text/javascript"></script>
