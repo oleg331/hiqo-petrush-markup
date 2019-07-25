@@ -7,7 +7,7 @@
   
   
   <title>Main page</title>
-<link rel="stylesheet" href="/assets/style.css" /><link rel="stylesheet" href="/assets/style.css" /></head>
+<link rel="stylesheet" href="/assets/style.css" /></head>
 
 <body>
   <div class="wrapper">
@@ -75,36 +75,18 @@
     </section>
     <section class="statistics" id="statistics">
       <div class="container">
-        <ul class="list-statistics">
-          <li class="statistics-item">
-            <i class="icons-statistic icon-user"></i>
-            <div class="inner-statistics-item">
-              <strong class="count-statistics-item">1000+</strong>
-              <span class="text-statistics-item">Happy users</span>
-            </div>
-          </li>
-          <li class="statistics-item">
-            <i class="icons-statistic icon-product"></i>
-            <div class="inner-statistics-item">
-              <strong class="count-statistics-item">200</strong>
-              <span class="text-statistics-item">Sold products</span>
-            </div>
-          </li>
-          <li class="statistics-item">
-            <i class="icons-statistic icon-comment"></i>
-            <div class="inner-statistics-item">
-              <strong class="count-statistics-item">5632</strong>
-              <span class="text-statistics-item">Comments</span>
-            </div>
-          </li>
-          <li class="statistics-item">
-            <i class="icons-statistic icon-code"></i>
-            <div class="inner-statistics-item">
-              <strong class="count-statistics-item">25000+</strong>
-              <span class="text-statistics-item">Lines of code</span>
-            </div>
-          </li>
-        </ul>
+        <script id="list-statistics" type="text/x-handlebars-template">
+          {{#each list}}
+            <li class="statistics-item">
+              <i class="{{icon}}"></i>
+              <div class="inner-statistics-item">
+                <strong class="count-statistics-item">{{count}}</strong>
+                <span class="text-statistics-item">{{text}}</span>
+              </div>
+            </li>
+          {{/each}}
+        </script>
+        <ul class="list-statistics"></ul>
       </div>
     </section>
     <section class="blog bottom-border-polyline" id="blog">
