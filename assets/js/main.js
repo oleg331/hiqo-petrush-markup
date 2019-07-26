@@ -61,13 +61,12 @@ function generateTemplate(template) {
       elem.innerHTML = compileTemplate(data);
 
       if (showItems !== undefined) {
-        const buttonShowMore = document.querySelector('.show-more-portfolio-block');
+        const buttonShowMore = document.querySelector(showItems.buttonShowMore);
         let showMoreTemplate = template;
 
         buttonShowMore.onclick = (event) => {
           const target = event.target;
 
-          buttonShowMore.parentNode.removeChild(buttonShowMore);
           delete showMoreTemplate.showItems;
 
           generateTemplate(showMoreTemplate);

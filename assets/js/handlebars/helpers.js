@@ -28,7 +28,6 @@ let templateStructure = [];
 let eachLimitStatus = false;
 
 Handlebars.registerHelper('eachLimit', (items, limitItems, options) => {
-  templateStructure = [];
 
   if(!items || items.length == 0) {
     return options.inverse(this);

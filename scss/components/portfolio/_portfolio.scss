@@ -45,5 +45,9 @@
     .show-more-portfolio-block {
         padding-top: 30px;
         text-align: center;
+
+        .btn {
+            outline-color: $color-link-base-active;
+        }
     }
 }
