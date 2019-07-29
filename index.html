@@ -18,7 +18,15 @@
           <!-- navigation desktop -->
             <ul class="navigation navigation-general"></ul>
             <script id="navigation-general" type="text/x-handlebars-template">
-              {{#each list}} {{NavLink "general" this @index}} {{/each}}
+              {{#each list}} 
+                {{NavLink "general" this @index ../list.length "
+                  <!-- Add static logo -->
+                  <a class='link-navigation-item logo' href='index.html'>
+                    <img src='./assets/img/logo.png' alt='logo' />
+                    <span class='text-logo hidden-large'>Expire</span>
+                  </a>
+                "}}
+              {{/each}}
             </script>
           <!-- burder mobile -->
           <div class="burger-menu visible-medium">
