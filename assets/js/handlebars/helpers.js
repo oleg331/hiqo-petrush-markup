@@ -1,9 +1,10 @@
 // navigation header
-Handlebars.registerHelper('NavLink', (typeLink, item, index) => {
+Handlebars.registerHelper('NavLink', (typeLink, item, index, length, logo) => {
   const { url, text, classNameItem, classNameLink } = item;
   
   const isFirst = (index === 0);
   const isGeneral = (typeLink === 'general');
+  const arrayCenter = Math.floor(length / 2) - 1;
 
   const listItem = document.createElement('li');
   const link = document.createElement('a');
@@ -18,6 +19,14 @@ Handlebars.registerHelper('NavLink', (typeLink, item, index) => {
   link.innerHTML = text;
 
   listItem.appendChild(link);
+
+  if (isGeneral && index === arrayCenter) {
+    const logoDOM = document.createElement('li');
+    logoDOM.setAttribute('class', classNameItem + ' navigation-item-logo');
+
+    logoDOM.innerHTML = logo;
+    listItem.appendChild(logoDOM);
+  }
 
   return new Handlebars.SafeString(listItem.outerHTML);
 });
