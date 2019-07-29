@@ -64,17 +64,6 @@ function generateTemplate(template) {
 
       elem.innerHTML = compileTemplate(data);
 
-      // () => {
-      //   if (!arguments.length) return;
-
-      //   const buttonShowMore = document.querySelector(showItems.buttonShowMore);
-      //   let showMoreTemplate = template;
-
-      //   buttonShowMore.addEventListener('click', event => {
-      //     delete showMoreTemplate.showItems;
-      //     generateTemplate(showMoreTemplate);
-      //   })
-      // }
       if (showItems !== undefined) {
         const buttonShowMore = document.querySelector(showItems.buttonShowMore);
         let showMoreTemplate = template;
