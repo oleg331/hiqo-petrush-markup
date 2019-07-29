@@ -21,30 +21,25 @@ function removeClass(elem, className) {
   }
 }
 
-const Slider = (function () {
-
-  const slider = function (settings) {
+  const Slider = function (settings) {
 
     const defaultState = {
       transition: { speed: 200, easing: 'ease' },
       showSlides: 3,
       swipe: false,
       autoHeight: false
-    }
+    };
 
-    this.state = settings;
-
-    Object.keys(defaultState).forEach(key => {
-      if (!this.state[key]) {
-        this.state[key] = defaultState[key];
-      }
-    })
+    this.state = {
+      ...defaultState,
+      ...settings
+    };
 
     this.generateSlides().then(() => this.init());
 
   }
 
-  slider.prototype.getSlidesData = function () {
+  Slider.prototype.getSlidesData = function () {
     const dataUrl = this.state.dataUrl;
 
     return fetch(dataUrl)
@@ -57,7 +52,7 @@ const Slider = (function () {
 
   }
 
-  slider.prototype.generateSlides = function () {
+  Slider.prototype.generateSlides = function () {
     return new Promise((resolve) => {
       this.currentHTML = document.createElement('div');
       this.currentHTML.className = 'slider-inner';
@@ -88,7 +83,7 @@ const Slider = (function () {
     })
   }
 
-  slider.prototype.generateSlide = function (sliderName, slideData) {
+  Slider.prototype.generateSlide = function (sliderName, slideData) {
     if (sliderName === 'slider-header') {
       return `
         <h1 class="head-primary title-slider-slide">${slideData.title}</h1>
@@ -126,7 +121,7 @@ const Slider = (function () {
     }
   }
 
-  slider.prototype.buildDots = function () {
+  Slider.prototype.buildDots = function () {
 
     for (let i = 0; i < this.totalSlides; i++) {
       const dot = document.createElement('div');
@@ -145,11 +140,11 @@ const Slider = (function () {
     }, false);
   }
 
-  slider.prototype.getCurrentLeft = function () {
+  Slider.prototype.getCurrentLeft = function () {
     this.currentLeft = parseInt(this.sliderInner.style.left.split('px')[0]);
   }
 
-  slider.prototype.goToSlide = function () {
+  Slider.prototype.goToSlide = function () {
 
     this.sliderInner.style.transition = 'left ' + this.state.transition.speed / 1000 + 's ' + this.state.transition.easing;
     this.sliderInner.style.left = -this.currentSlide * this.slideW + 'px';
@@ -168,7 +163,7 @@ const Slider = (function () {
     }
   }
 
-  slider.prototype.init = function () {
+  Slider.prototype.init = function () {
     const self = this;
 
     function onResize(c, t) {
@@ -289,19 +284,19 @@ const Slider = (function () {
     }
   }
 
-  slider.prototype.addListenerMulti = function (elem, eventNames, eventFunc) {
+  Slider.prototype.addListenerMulti = function (elem, eventNames, eventFunc) {
     eventNames.split(' ').forEach(function (e) {
       return elem.addEventListener(e, eventFunc, false);
     });
   }
 
-  slider.prototype.removeListenerMulti = function (elem, eventNames, eventFunc) {
+  Slider.prototype.removeListenerMulti = function (elem, eventNames, eventFunc) {
     eventNames.split(' ').forEach(function (e) {
       return elem.removeEventListener(e, eventFunc, false);
     });
   }
 
-  slider.prototype.initArrows = function () {
+  Slider.prototype.initArrows = function () {
     const self = this;
 
     function clickArrowLeft() {
@@ -328,7 +323,7 @@ const Slider = (function () {
     this.addListenerMulti(this.state.arrowRight, 'click', clickArrowRight)
   }
 
-  slider.prototype.setDot = function () {
+  Slider.prototype.setDot = function () {
     let tardot = this.currentSlide - 1;
 
     for (let j = 0; j < this.totalSlides; j++) {
@@ -344,7 +339,7 @@ const Slider = (function () {
     addClass(this.state.dotsContainer.querySelectorAll('.slider-dot')[tardot], 'slider-dot-active');
   }
 
-  slider.prototype.updateSliderDimension = function () {
+  Slider.prototype.updateSliderDimension = function () {
 
     this.slideW = parseInt(this.state.target.querySelectorAll('.slider-slide')[0].offsetWidth);
     this.sliderInner.style.left = -this.slideW * this.currentSlide + 'px';
@@ -394,6 +389,3 @@ const Slider = (function () {
       }
     }
   }
-
-  return slider;
-})();
