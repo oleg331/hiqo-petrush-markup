@@ -1,30 +1,41 @@
 {
   "name": "navigation",
-  "itemClass": "link-navigation-item",
   "list": [
     {
       "text": "Home",
-      "url": "index.html"
+      "url": "index.html",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
     },
     {
       "text": "Portfolio",
-      "url": "#portfolio"
+      "url": "#portfolio",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
     },
     {
       "text": "Blog",
-      "url": "#blog"
+      "url": "#blog",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
     },
     {
       "text": "Pages",
-      "url": "#"
+      "url": "#",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
     },
     {
       "text": "About us",
-      "url": "#contact-us"
+      "url": "#contact-us",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
     },
     {
       "text": "Contact",
-      "url": "#contact-us"
+      "url": "#contact-us",
+      "classNameItem": "navigation-item",
+      "classNameLink": "link-navigation-item"
     }
   ]
 }

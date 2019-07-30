@@ -1,31 +1,37 @@
 {
   "name": "portfolio",
-  "itemClass": "link-navigation-item",
   "list": [
     {
-      "title": "Big cit",
-      "description": "Art, Photography, City",
-      
+      "title" : "Big city1",
+      "description": "Art, Photography, City"
     },
     {
-      "text": "Portfolio",
-      "url": "#portfolio"
+      "title" : "Big city2",
+      "description": "Art, Photography, City"
     },
     {
-      "text": "Blog",
-      "url": "#blog"
+      "title" : "Big city3",
+      "description": "Art, Photography, City"
     },
     {
-      "text": "Pages",
-      "url": "#"
+      "title" : "Big city4",
+      "description": "Art, Photography, City"
     },
     {
-      "text": "About us",
-      "url": "#contact-us"
+      "title" : "Big city5",
+      "description": "Art, Photography, City"
     },
     {
-      "text": "Contact",
-      "url": "#contact-us"
+      "title" : "Big city6",
+      "description": "Art, Photography, City"
+    },
+    {
+      "title" : "Big city7",
+      "description": "Art, Photography, City"
+    },
+    {
+      "title" : "Big city8",
+      "description": "Art, Photography, City"
     }
   ]
 }

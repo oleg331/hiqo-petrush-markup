@@ -2,7 +2,7 @@
   "name": "statistics",
   "list": [
     {
-      "icon" : "icons-statistic icon-user",
+      "title" : "icons-statistic icon-user",
       "count": "1000+",
       "text": "Happy users"
     },

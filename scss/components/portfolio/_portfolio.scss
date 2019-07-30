@@ -17,7 +17,6 @@
     .list-portfolio {
         display: grid;
         grid-template-columns: repeat(4, minmax(auto, auto));
-        grid-template-rows: repeat(2, 240px);
         grid-gap: 2px;
         width: $width-list-portfolio;
         background: $bg-list-portfolio;
@@ -35,12 +34,20 @@
 
         @include screen-medium {
             grid-template-columns: repeat(1, minmax(auto, auto));
-            grid-template-rows: repeat(8, 240px);
             grip-gap: 5px;
         }
 
         @include screen-small {
             grid-gap: 10px;
+        }
+    }
+
+    .show-more-portfolio-block {
+        padding-top: 30px;
+        text-align: center;
+
+        .btn {
+            outline-color: $color-link-base-active;
         }
     }
 }
