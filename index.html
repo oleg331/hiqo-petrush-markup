@@ -16,18 +16,14 @@
       <nav class="header-top">
         <div class="container">
           <!-- navigation desktop -->
-            <ul class="navigation navigation-general"></ul>
-            <script id="navigation-general" type="text/x-handlebars-template">
-              {{#each list}} 
-                {{NavLink "general" this @index ../list.length "
-                  <!-- Add static logo -->
-                  <a class='link-navigation-item logo' href='index.html'>
-                    <img src='./assets/img/logo.png' alt='logo' />
-                    <span class='text-logo hidden-large'>Expire</span>
-                  </a>
-                "}}
-              {{/each}}
-            </script>
+            <ul class="navigation navigation-general">
+              <li class="navigation-item navigation-item-logo">
+                <a class='link-navigation-item logo' href='index.html'>
+                  <img src='./assets/img/logo.png' alt='logo' />
+                  <span class='text-logo hidden-large'>Expire</span>
+                </a>
+              </li>
+            </ul>
           <!-- burder mobile -->
           <div class="burger-menu visible-medium">
             <input type="checkbox" id="burger-shower" class="burger-shower">
@@ -42,9 +38,6 @@
             </label>
             <nav class="burger-dropdown">
               <ul class="navigation navigation-burger"></ul>
-              <script id="navigation-burger" type="text/x-handlebars-template">
-                {{#each list}} {{NavLink "burger" this @index}} {{/each}}
-              </script>
             </nav>
           </div>
         </div>
@@ -83,17 +76,6 @@
     </section>
     <section class="statistics" id="statistics">
       <div class="container">
-        <script id="list-statistics" type="text/x-handlebars-template">
-          {{#each list}}
-            <li class="statistics-item">
-              <i class="{{icon}}"></i>
-              <div class="inner-statistics-item">
-                <strong class="count-statistics-item">{{count}}</strong>
-                <span class="text-statistics-item">{{text}}</span>
-              </div>
-            </li>
-          {{/each}}
-        </script>
         <ul class="list-statistics"></ul>
       </div>
     </section>
@@ -125,26 +107,6 @@
       <div class="head-section head-dark">
         <h3 class="head-secondary head-title">Latest portfolio</h3>
       </div>
-      <script id="list-portfolio" type="text/x-handlebars-template">
-        {{#eachLimit list 8}}
-          <div class="portfolio-block">
-            <div class="portfolio-block-inner">
-              <h5 class="head-extra-secondary title-portoflio-block">{{title}}</h5>
-              <p class="description-portfolio-block">{{description}}</p>
-              <footer class="footer-portfolio-block">
-                <ul class="list-icons-portfolio-block">
-                  <li class="list-portfolio-block-item">
-                    <a class="icons-portfolio icon-ti-link" href="#"></a>
-                  </li>
-                  <li class="list-portfolio-block-item">
-                    <a class="icons-portfolio icon-zoom-in" href="#"></a>
-                  </li>
-                </ul>
-              </footer>
-            </div>
-          </div>
-        {{/eachLimit}}
-      </script>
       <div class="list-portfolio"></div>
       <div class="show-more-portfolio-block">
         <button class="btn btn-light">Show more</button>
@@ -246,10 +208,12 @@
   <!-- scripts -->
 
   <!-- handlebars -->
-  <script src="./assets/js/handlebars/handlebars-1.0.rc.2.js" type="text/javascript"></script>
-  <script src="./assets/js/handlebars/helpers.js" type="text/javascript"></script>
+  <script src="assets/js/handlebars/handlebars-1.0.rc.2.js" type="text/javascript"></script>
 
-  <script src="assets/js/handleResponse.js" type="text/javascript"></script>
+  <script src="assets/js/utils.js" type="text/javascript"></script>
+  <script src="assets/js/services.js" type="text/javascript"></script>
+  <script src="assets/js/actions.js" type="text/javascript"></script>
+  
   <script src="assets/js/slider.js" type="text/javascript"></script>
   <script src="assets/js/main.js" type="text/javascript"></script>
 </body>
